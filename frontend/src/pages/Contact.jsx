@@ -252,10 +252,10 @@ const Contact = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          color: '#64748b'
+          color: 'white'
         }}>
           <div style={{ textAlign: 'center' }}>
-            <MapPin size={48} color="#ff5757" style={{ marginBottom: '1rem' }} />
+            <MapPin size={48} color="#00A2E8" style={{ marginBottom: '1rem' }} />
             <p style={{ fontSize: '18px' }}>Map integration placeholder</p>
             <p style={{ fontSize: '14px' }}>123 Green Street, Plant City, PC 12345</p>
           </div>
