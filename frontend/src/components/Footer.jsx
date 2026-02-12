@@ -55,7 +55,7 @@ const Footer = () => {
           <div>
             <h4 style={{ color: 'white', marginBottom: '1rem', fontSize: '18px', fontWeight: '600' }}>Quick Links</h4>
             <ul style={{ listStyle: 'none', padding: 0 }}>
-              {['Home', 'Services', 'Events', 'Shop', 'Contact'].map((item) => (
+              {['Home', 'About', 'Services', 'Events', 'Shop', 'Contact'].map((item) => (
                 <li key={item} style={{ marginBottom: '0.5rem' }}>
                   <Link to={`/${item.toLowerCase() === 'home' ? '' : item.toLowerCase()}`} style={{
                     color: '#cbd5e1',
@@ -63,7 +63,7 @@ const Footer = () => {
                     fontSize: '14px',
                     transition: 'color 0.2s ease'
                   }}
-                  onMouseEnter={(e) => e.target.style.color = '#ff5757'}
+                  onMouseEnter={(e) => e.target.style.color = '#00A2E8'}
                   onMouseLeave={(e) => e.target.style.color = '#cbd5e1'}
                   >
                     {item}
