@@ -42,8 +42,8 @@ const Shop = () => {
               style={{
                 padding: '10px 24px',
                 borderRadius: '8px',
-                border: selectedCategory === category ? '2px solid #ff5757' : '2px solid #e2e8f0',
-                backgroundColor: selectedCategory === category ? '#ff5757' : 'white',
+                border: selectedCategory === category ? '2px solid #00A2E8' : '2px solid #e2e8f0',
+                backgroundColor: selectedCategory === category ? '#00A2E8' : 'white',
                 color: selectedCategory === category ? 'white' : '#64748b',
                 fontWeight: '600',
                 cursor: 'pointer',
