@@ -54,13 +54,13 @@ const Header = () => {
               to={link.path}
               style={{
                 textDecoration: 'none',
-                color: isActive(link.path) ? '#ff5757' : '#1e293b',
+                color: isActive(link.path) ? '#00A2E8' : '#1e293b',
                 fontWeight: isActive(link.path) ? '600' : '500',
                 fontSize: '16px',
                 transition: 'color 0.2s ease',
                 position: 'relative'
               }}
-              onMouseEnter={(e) => e.target.style.color = '#ff5757'}
+              onMouseEnter={(e) => e.target.style.color = '#00A2E8'}
               onMouseLeave={(e) => !isActive(link.path) && (e.target.style.color = '#1e293b')}
             >
               {link.label}
