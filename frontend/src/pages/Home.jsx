@@ -204,10 +204,10 @@ const Home = () => {
           gap: '2rem'
         }}>
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="card">
+            <div className="card">
               <div style={{ marginBottom: '1rem' }}>
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <span key={i} style={{ color: '#ff5757', fontSize: '20px' }}>★</span>
+                  <span key={i} style={{ color: '#00A2E8', fontSize: '20px' }}>★</span>
                 ))}
               </div>
               <p style={{ color: '#64748b', marginBottom: '1.5rem', fontStyle: 'italic', lineHeight: '1.6' }}>
