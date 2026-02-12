@@ -22,16 +22,16 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <img 
-              src="https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/buzwcxdn_PlantSpaCo_Logo_Primary_Transparent.png" 
+              src="https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/q5ghpdo7_Logo_PSC_1.png" 
               alt="Plant Spa Co." 
-              style={{ height: '60px', width: 'auto', marginBottom: '1rem', filter: 'brightness(0) invert(1)' }}
+              style={{ height: '70px', width: 'auto', marginBottom: '1rem' }}
             />
             <p style={{ color: '#cbd5e1', fontSize: '14px', lineHeight: '1.6' }}>
               Nurturing plants, elevating spaces. Professional plant care, interior design, and botanical experiences.
             </p>
             <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem' }}>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style={{
-                color: '#ff5757',
+                color: '#00A2E8',
                 transition: 'transform 0.2s ease'
               }}
               onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
@@ -40,7 +40,7 @@ const Footer = () => {
                 <Facebook size={24} />
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{
-                color: '#ff5757',
+                color: '#00A2E8',
                 transition: 'transform 0.2s ease'
               }}
               onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
