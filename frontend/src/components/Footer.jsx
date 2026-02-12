@@ -78,19 +78,19 @@ const Footer = () => {
             <h4 style={{ color: 'white', marginBottom: '1rem', fontSize: '18px', fontWeight: '600' }}>Contact Us</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <Phone size={16} color="#ff5757" />
+                <Phone size={16} color="#00A2E8" />
                 <a href="tel:+1234567890" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>
                   (123) 456-7890
                 </a>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <Mail size={16} color="#ff5757" />
+                <Mail size={16} color="#00A2E8" />
                 <a href="mailto:hello@plantspaco.com" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>
                   hello@plantspaco.com
                 </a>
               </div>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
-                <MapPin size={16} color="#ff5757" style={{ marginTop: '2px' }} />
+                <MapPin size={16} color="#00A2E8" style={{ marginTop: '2px' }} />
                 <span style={{ color: '#cbd5e1', fontSize: '14px' }}>
                   123 Green Street<br />Plant City, PC 12345
                 </span>
