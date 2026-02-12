@@ -92,7 +92,7 @@ const Shop = () => {
                   position: 'absolute',
                   top: '1rem',
                   right: '1rem',
-                  backgroundColor: '#ff5757',
+                  backgroundColor: '#00A2E8',
                   color: 'white',
                   padding: '6px 12px',
                   borderRadius: '6px',
