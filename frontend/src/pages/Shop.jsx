@@ -106,7 +106,7 @@ const Shop = () => {
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '0.5rem' }}>
                   <h3 style={{ fontSize: '1.25rem', margin: 0 }}>{product.name}</h3>
                   <span style={{ 
-                    color: '#ff5757', 
+                    color: '#00A2E8', 
                     fontWeight: '700', 
                     fontSize: '1.25rem',
                     whiteSpace: 'nowrap',
