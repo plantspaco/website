@@ -36,9 +36,9 @@ const Header = () => {
         {/* Logo */}
         <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
           <img 
-            src="https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/buzwcxdn_PlantSpaCo_Logo_Primary_Transparent.png" 
+            src="https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/q5ghpdo7_Logo_PSC_1.png" 
             alt="Plant Spa Co." 
-            style={{ height: '50px', width: 'auto' }}
+            style={{ height: '60px', width: 'auto' }}
           />
         </Link>
 
