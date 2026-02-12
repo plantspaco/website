@@ -100,10 +100,10 @@ const Header = () => {
                 display: 'block',
                 padding: '12px 16px',
                 textDecoration: 'none',
-                color: isActive(link.path) ? '#ff5757' : '#1e293b',
+                color: isActive(link.path) ? '#00A2E8' : '#1e293b',
                 fontWeight: isActive(link.path) ? '600' : '500',
                 fontSize: '16px',
-                borderLeft: isActive(link.path) ? '3px solid #ff5757' : '3px solid transparent'
+                borderLeft: isActive(link.path) ? '3px solid #00A2E8' : '3px solid transparent'
               }}
             >
               {link.label}
