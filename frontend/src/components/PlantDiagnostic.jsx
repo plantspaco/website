@@ -374,13 +374,13 @@ const PlantDiagnostic = ({ isOpen, onClose }) => {
           {step === 5 && diagnosis && (
             <div>
               <div style={{
-                backgroundColor: '#fff5f5',
+                backgroundColor: '#e6f7ff',
                 padding: '1.5rem',
                 borderRadius: '12px',
                 marginBottom: '2rem',
-                border: '2px solid #ff5757'
+                border: '2px solid #00A2E8'
               }}>
-                <h3 style={{ color: '#ff5757', marginBottom: '1rem' }}>
+                <h3 style={{ color: '#00A2E8', marginBottom: '1rem' }}>
                   {diagnosis.diagnosis}
                 </h3>
                 <div>
