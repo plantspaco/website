@@ -176,7 +176,7 @@ const PlantDiagnostic = ({ isOpen, onClose }) => {
         <DialogHeader>
           <DialogTitle>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <Leaf size={24} color="#ff5757" />
+              <Leaf size={24} color="#00A2E8" />
               Plant Diagnostic Tool - Step {step} of 4
             </div>
           </DialogTitle>
