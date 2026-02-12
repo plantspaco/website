@@ -165,7 +165,7 @@ const Contact = () => {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
               <div className="card">
                 <div style={{ display: 'flex', alignItems: 'start', gap: '1rem' }}>
-                  <Phone size={24} color="#ff5757" />
+                  <Phone size={24} color="#00A2E8" />
                   <div>
                     <h4 style={{ marginBottom: '0.5rem' }}>Phone</h4>
                     <a href="tel:+1234567890" style={{ 
@@ -181,7 +181,7 @@ const Contact = () => {
 
               <div className="card">
                 <div style={{ display: 'flex', alignItems: 'start', gap: '1rem' }}>
-                  <Mail size={24} color="#ff5757" />
+                  <Mail size={24} color="#00A2E8" />
                   <div>
                     <h4 style={{ marginBottom: '0.5rem' }}>Email</h4>
                     <a href="mailto:hello@plantspaco.com" style={{ 
@@ -197,7 +197,7 @@ const Contact = () => {
 
               <div className="card">
                 <div style={{ display: 'flex', alignItems: 'start', gap: '1rem' }}>
-                  <MapPin size={24} color="#ff5757" />
+                  <MapPin size={24} color="#00A2E8" />
                   <div>
                     <h4 style={{ marginBottom: '0.5rem' }}>Location</h4>
                     <p style={{ color: '#64748b', margin: 0, fontSize: '16px' }}>
@@ -210,7 +210,7 @@ const Contact = () => {
 
               <div className="card">
                 <div style={{ display: 'flex', alignItems: 'start', gap: '1rem' }}>
-                  <Clock size={24} color="#ff5757" />
+                  <Clock size={24} color="#00A2E8" />
                   <div>
                     <h4 style={{ marginBottom: '0.5rem' }}>Hours</h4>
                     <p style={{ color: '#64748b', margin: 0, fontSize: '16px' }}>
