@@ -208,8 +208,8 @@ const PlantDiagnostic = ({ isOpen, onClose }) => {
                       fontWeight: '500'
                     }}
                     onMouseEnter={(e) => {
-                      e.target.style.borderColor = '#ff5757';
-                      e.target.style.backgroundColor = '#fff5f5';
+                      e.target.style.borderColor = '#00A2E8';
+                      e.target.style.backgroundColor = '#e6f7ff';
                     }}
                     onMouseLeave={(e) => {
                       if (answers.problem !== problem.value) {
