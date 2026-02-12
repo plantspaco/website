@@ -282,8 +282,8 @@ const PlantDiagnostic = ({ isOpen, onClose }) => {
                       fontSize: '15px'
                     }}
                     onMouseEnter={(e) => {
-                      e.target.style.borderColor = '#ff5757';
-                      e.target.style.backgroundColor = '#fff5f5';
+                      e.target.style.borderColor = '#00A2E8';
+                      e.target.style.backgroundColor = '#e6f7ff';
                     }}
                     onMouseLeave={(e) => {
                       if (answers.soilMoisture !== option.value) {
