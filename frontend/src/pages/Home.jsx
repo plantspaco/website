@@ -16,7 +16,7 @@ const Home = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'linear-gradient(135deg, rgba(255, 87, 87, 0.1) 0%, rgba(255, 255, 255, 1) 100%)',
+        background: 'linear-gradient(135deg, rgba(0, 162, 232, 0.08) 0%, rgba(56, 117, 62, 0.05) 100%)',
         padding: '2rem',
         overflow: 'hidden'
       }}>
@@ -26,7 +26,7 @@ const Home = () => {
           right: '5%',
           width: '300px',
           height: '300px',
-          background: 'radial-gradient(circle, rgba(255, 87, 87, 0.15) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(0, 162, 232, 0.12) 0%, transparent 70%)',
           borderRadius: '50%',
           filter: 'blur(40px)'
         }} />
@@ -49,7 +49,7 @@ const Home = () => {
               color: '#0f172a'
             }}>
               Nurturing Plants,<br />
-              <span style={{ color: '#ff5757' }}>Elevating Spaces</span>
+              <span style={{ color: '#00A2E8' }}>Elevating Spaces</span>
             </h1>
             <p style={{
               fontSize: '1.25rem',
