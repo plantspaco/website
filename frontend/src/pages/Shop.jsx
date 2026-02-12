@@ -15,7 +15,7 @@ const Shop = () => {
     <div>
       {/* Hero Section */}
       <section style={{
-        background: 'linear-gradient(135deg, rgba(255, 87, 87, 0.1) 0%, rgba(255, 255, 255, 1) 100%)',
+        background: 'linear-gradient(135deg, rgba(0, 162, 232, 0.1) 0%, rgba(255, 255, 255, 1) 100%)',
         padding: '5rem 2rem',
         textAlign: 'center'
       }}>
