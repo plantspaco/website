@@ -52,8 +52,8 @@ const Shop = () => {
               }}
               onMouseEnter={(e) => {
                 if (selectedCategory !== category) {
-                  e.target.style.borderColor = '#ff5757';
-                  e.target.style.color = '#ff5757';
+                  e.target.style.borderColor = '#00A2E8';
+                  e.target.style.color = '#00A2E8';
                 }
               }}
               onMouseLeave={(e) => {
