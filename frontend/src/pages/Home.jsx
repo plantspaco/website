@@ -224,7 +224,7 @@ const Home = () => {
 
       {/* CTA Section */}
       <section style={{
-        background: 'linear-gradient(135deg, #ff5757 0%, #e04545 100%)',
+        background: 'linear-gradient(135deg, #00A2E8 0%, #38753E 100%)',
         padding: '5rem 2rem',
         textAlign: 'center',
         color: 'white'
@@ -237,7 +237,7 @@ const Home = () => {
           <Link to="/contact">
             <button className="btn-outline" style={{ 
               backgroundColor: 'white',
-              color: '#ff5757',
+              color: '#00A2E8',
               border: '2px solid white',
               fontSize: '18px',
               padding: '14px 32px'
@@ -254,7 +254,7 @@ const Home = () => {
             }}
             onMouseEnter={(e) => {
               e.target.style.backgroundColor = 'white';
-              e.target.style.color = '#ff5757';
+              e.target.style.color = '#00A2E8';
             }}
             onMouseLeave={(e) => {
               e.target.style.backgroundColor = 'transparent';
