@@ -140,7 +140,7 @@ const Services = () => {
       <section style={{
         padding: '5rem 2rem',
         textAlign: 'center',
-        background: 'linear-gradient(135deg, #ff5757 0%, #e04545 100%)',
+        background: 'linear-gradient(135deg, #00A2E8 0%, #38753E 100%)',
         color: 'white'
       }}>
         <h2 style={{ color: 'white', marginBottom: '1rem' }}>Not sure which service you need?</h2>
@@ -150,7 +150,7 @@ const Services = () => {
         <Link to="/contact">
           <button className="btn-outline" style={{ 
             backgroundColor: 'white',
-            color: '#ff5757',
+            color: '#00A2E8',
             border: '2px solid white',
             fontSize: '18px',
             padding: '14px 32px'
