@@ -32,13 +32,27 @@ const Header = () => {
         justifyContent: 'space-between',
         alignItems: 'center'
       }}>
-        {/* Logo - 6x bigger */}
-        <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+        {/* Logo with Tagline */}
+        <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
           <img 
             src="https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/q5ghpdo7_Logo_PSC_1.png" 
             alt="Plant Spa Co." 
             style={{ height: '140px', width: 'auto' }}
           />
+          <div style={{ 
+            display: 'flex', 
+            flexDirection: 'column', 
+            gap: '0.15rem',
+            fontSize: '0.95rem',
+            fontWeight: '600',
+            letterSpacing: '0.5px'
+          }}>
+            <span style={{ color: '#0091c2' }}>REPOT</span>
+            <span style={{ color: '#3e8840' }}>REFRESH</span>
+            <span style={{ color: '#0091c2' }}>RENEW</span>
+            <span style={{ color: '#3e8840' }}>RESTYLE</span>
+            <span style={{ color: '#0091c2' }}>REVIVE</span>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
