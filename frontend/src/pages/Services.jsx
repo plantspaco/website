@@ -74,18 +74,19 @@ const Services = () => {
     <div>
       {/* Hero Section */}
       <section style={{
-        background: 'linear-gradient(135deg, rgba(195, 218, 81, 0.1) 0%, rgba(255, 255, 255, 1) 100%)',
+        background: 'linear-gradient(135deg, rgba(195, 218, 81, 0.1) 0%, rgba(212, 166, 94, 0.05) 100%)',
         padding: '5rem 2rem',
         textAlign: 'center'
       }}>
-        <h1 style={{ marginBottom: '1rem', fontSize: '3.5rem' }}>Professional Plant Care Services</h1>
+        <h1 style={{ marginBottom: '1rem', fontSize: '3.5rem' }}>Plant Care Services for Your Home</h1>
+        <div className="gold-divider" />
         <p style={{ fontSize: '1.3rem', color: '#323527', maxWidth: '800px', margin: '0 auto 2rem' }}>
-          Comprehensive solutions for restaurants and hospitality spaces
+          Professional, personalized plant care that comes to you
         </p>
         <Link to="/contact">
           <button className="btn-primary" style={{ fontSize: '19px', padding: '18px 42px' }}>
             <Calendar size={22} />
-            Schedule Free Consultation
+            Book Your Free Walkthrough
           </button>
         </Link>
       </section>
