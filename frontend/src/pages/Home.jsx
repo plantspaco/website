@@ -127,32 +127,32 @@ const Home = () => {
             {
               title: 'On-Site Plant Maintenance',
               description: 'Regular scheduled visits to keep your plants thriving',
-              icon: <Leaf size={40} color=\"#3e8840\" />
+              icon: <Leaf size={40} color="#3e8840" />
             },
             {
               title: 'Custom Plant Design & Installation',
               description: 'Tailored plant selections that match your brand aesthetic',
-              icon: <Award size={40} color=\"#0091c2\" />
+              icon: <Award size={40} color="#0091c2" />
             },
             {
               title: 'Pruning & Reshaping',
               description: 'Professional grooming to maintain perfect appearance',
-              icon: <CheckCircle size={40} color=\"#3e8840\" />
+              icon: <CheckCircle size={40} color="#3e8840" />
             },
             {
               title: 'Repotting & Soil Upgrades',
               description: 'Essential care to promote healthy long-term growth',
-              icon: <CheckCircle size={40} color=\"#0091c2\" />
+              icon: <CheckCircle size={40} color="#0091c2" />
             },
             {
               title: 'Pest Prevention & Treatment',
               description: 'Proactive monitoring and immediate intervention',
-              icon: <CheckCircle size={40} color=\"#3e8840\" />
+              icon: <CheckCircle size={40} color="#3e8840" />
             },
             {
               title: 'Monthly Maintenance Plans',
               description: 'Flexible contracts designed for your schedule and budget',
-              icon: <Calendar size={40} color=\"#0091c2\" />
+              icon: <Calendar size={40} color="#0091c2" />
             }
           ].map((service, idx) => (
             <div key={idx} className="card" style={{ textAlign: 'center' }}>
