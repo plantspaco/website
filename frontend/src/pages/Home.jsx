@@ -165,8 +165,8 @@ const Home = () => {
           ))}
         </div>
         <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-          <Link to=\"/services\">
-            <button className=\"btn-accent\" style={{ fontSize: '18px', padding: '16px 40px' }}>
+          <Link to="/services">
+            <button className="btn-accent" style={{ fontSize: '18px', padding: '16px 40px' }}>
               View All Services
               <ArrowRight size={20} />
             </button>
@@ -312,8 +312,8 @@ const Home = () => {
               2 Half Days (Spring & Fall) + 2 follow-ups + $75 merch credit
             </p>
           </div>
-          <Link to=\"/contact\">
-            <button className=\"btn-primary\" style={{
+          <Link to="/contact">
+            <button className="btn-primary" style={{
               backgroundColor: 'white',
               color: '#3e8840',
               fontSize: '19px',
@@ -383,7 +383,7 @@ const Home = () => {
           Schedule your free consultation and receive a custom proposal
         </p>
         <div style={{ display: 'flex', gap: '1.25rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <Link to=\"/contact\">
+          <Link to="/contact">
             <button style={{
               background: 'white',
               color: '#0091c2',
