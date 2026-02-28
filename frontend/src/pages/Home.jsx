@@ -347,9 +347,9 @@ const Home = () => {
           <video 
             controls 
             style={{ width: '100%', height: 'auto', display: 'block' }}
-            poster=\"https://images.unsplash.com/photo-1746702475474-fc4baed9f0c9\"
+            poster="https://images.unsplash.com/photo-1746702475474-fc4baed9f0c9"
           >
-            <source src=\"https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/47lk4how_Tv-Ad.mp4\" type=\"video/mp4\" />
+            <source src="https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/47lk4how_Tv-Ad.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -412,7 +412,7 @@ const Home = () => {
               Book Free Plant Health Check
             </button>
           </Link>
-          <a href=\"tel:+1234567890\">
+          <a href="tel:+1234567890">
             <button style={{
               background: 'transparent',
               color: 'white',
