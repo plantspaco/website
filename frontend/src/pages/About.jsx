@@ -58,44 +58,112 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Story Section */}
+      {/* Our Story Section - Founder & Team */}
       <section className="section section-alt">
+        <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+          <h2 style={{ marginBottom: '1rem', fontSize: '2.75rem' }}>Meet Our Team</h2>
+          <div className="gold-divider" />
+          <p style={{ fontSize: '1.2rem', color: '#323527', maxWidth: '700px', margin: '0 auto' }}>
+            Passionate plant experts dedicated to helping your plants thrive
+          </p>
+        </div>
+
+        {/* Founder Section */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gap: '4rem',
+          alignItems: 'center',
+          marginBottom: '5rem'
+        }}>
+          <div style={{
+            height: '450px',
+            borderRadius: '20px',
+            overflow: 'hidden',
+            boxShadow: '0 20px 60px rgba(0,0,0,0.12)',
+            border: '4px solid #d4a65e'
+          }}>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/qjr4pt4d_IMG_3370.HEIC" 
+              alt="Business Owner"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover'
+              }}
+            />
+          </div>
+          <div>
+            <h3 style={{ marginBottom: '0.5rem', fontSize: '2rem', color: '#3e8840' }}>Business Owner & Founder</h3>
+            <p style={{ 
+              fontSize: '1.15rem', 
+              color: '#0091c2', 
+              fontWeight: '600',
+              marginBottom: '1.5rem'
+            }}>
+              Bringing Care & Expertise to Your Home
+            </p>
+            <p style={{ color: '#323527', fontSize: '1.1rem', marginBottom: '1.5rem', lineHeight: '1.8' }}>
+              Plant Spa Co. was born from a deep love of plants and a passion for helping people create beautiful, thriving spaces. Whether you're a busy parent, a plant enthusiast, or someone who just wants healthier greenery at home, I'm here to make plant care easy and enjoyable.
+            </p>
+            <p style={{ color: '#323527', fontSize: '1.1rem', lineHeight: '1.8' }}>
+              Our approach is personal, professional, and centered around <strong>you and your plants</strong>. We believe everyone deserves a home filled with healthy, happy plants — and we're here to make that happen.
+            </p>
+          </div>
+        </div>
+
+        {/* Master Gardener Section */}
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
           gap: '4rem',
           alignItems: 'center'
         }}>
-          <div>
-            <h2 style={{ marginBottom: '1.5rem' }}>Our Story</h2>
-            <p style={{ color: '#64748b', fontSize: '1.125rem', marginBottom: '1.5rem', lineHeight: '1.7' }}>
-              Founded with a passion for plants and a vision for beautiful spaces, Plant Spa Co. has grown from 
-              a small plant care service to a full-service botanical luxury company.
-            </p>
-            <p style={{ color: '#64748b', fontSize: '1.125rem', marginBottom: '1.5rem', lineHeight: '1.7' }}>
-              We combine horticultural expertise with interior design sensibility to create stunning plant 
-              arrangements and provide exceptional care services. Our team of plant specialists is dedicated to 
-              helping your green friends thrive.
-            </p>
-            <p style={{ color: '#64748b', fontSize: '1.125rem', lineHeight: '1.7' }}>
-              Whether you need professional repotting, interior plant design, or simply want to learn more about 
-              plant care through our workshops, we're here to nurture your botanical journey.
-            </p>
+          <div style={{ order: 2 }}>
+            <div style={{
+              height: '450px',
+              borderRadius: '20px',
+              overflow: 'hidden',
+              boxShadow: '0 20px 60px rgba(0,0,0,0.12)',
+              border: '4px solid #3e8840'
+            }}>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/klqm94fp_IMG_3807.HEIC" 
+                alt="Master Gardener"
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
           </div>
-          <div>
-            <img 
-              src="https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/klqm94fp_IMG_3807.HEIC" 
-              alt="Our plant care work"
-              style={{
-                width: '100%',
-                height: '500px',
-                objectFit: 'cover',
-                borderRadius: '12px',
-                boxShadow: '0 10px 30px rgba(0,0,0,0.15)'
-              }}
-            />
+          <div style={{ order: 1 }}>
+            <h3 style={{ marginBottom: '0.5rem', fontSize: '2rem', color: '#0091c2' }}>Our Master Gardener</h3>
+            <p style={{ 
+              fontSize: '1.15rem', 
+              color: '#3e8840', 
+              fontWeight: '600',
+              marginBottom: '1.5rem'
+            }}>
+              Expert Knowledge You Can Trust
+            </p>
+            <p style={{ color: '#323527', fontSize: '1.1rem', marginBottom: '1.5rem', lineHeight: '1.8' }}>
+              We're proud to have a <strong>Master Gardener</strong> on our team (my mother!), bringing decades of horticultural expertise, education, and deep plant knowledge to every service we provide.
+            </p>
+            <p style={{ color: '#323527', fontSize: '1.1rem', lineHeight: '1.8' }}>
+              With years of experience and certification, our Master Gardener ensures your plants receive <strong>professional, science-backed care</strong> — from diagnosing issues to optimizing growth. When you work with Plant Spa Co., you're getting true expertise rooted in a lifetime of plant passion.
+            </p>
           </div>
         </div>
+
+        <style>{`
+          @media (max-width: 768px) {
+            div[style*="order: 1"], div[style*="order: 2"] {
+              order: 1 !important;
+            }
+          }
+        `}</style>
       </section>
 
       {/* Our Values */}
