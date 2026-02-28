@@ -111,7 +111,7 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section className=\"section\">
+      <section className="section">
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <h2 style={{ marginBottom: '1rem', fontSize: '2.75rem' }}>Comprehensive Plant Services</h2>
           <p style={{ fontSize: '1.2rem', color: '#323527', maxWidth: '700px', margin: '0 auto' }}>
@@ -155,7 +155,7 @@ const Home = () => {
               icon: <Calendar size={40} color=\"#0091c2\" />
             }
           ].map((service, idx) => (
-            <div key={idx} className=\"card\" style={{ textAlign: 'center' }}>
+            <div key={idx} className="card" style={{ textAlign: 'center' }}>
               <div style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
                 {service.icon}
               </div>
@@ -175,7 +175,7 @@ const Home = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className=\"section section-alt\">
+      <section className="section section-alt">
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <h2 style={{ marginBottom: '1rem', fontSize: '2.75rem' }}>How It Works</h2>
           <p style={{ fontSize: '1.2rem', color: '#323527', maxWidth: '700px', margin: '0 auto' }}>
@@ -246,7 +246,7 @@ const Home = () => {
       </section>
 
       {/* Grow Club Section */}
-      <section className=\"section\">
+      <section className="section">
         <div style={{
           background: 'linear-gradient(135deg, #c3da51 0%, #3e8840 100%)',
           borderRadius: '20px',
@@ -330,7 +330,7 @@ const Home = () => {
       </section>
 
       {/* Video Testimonial Section */}
-      <section className=\"section section-alt\">
+      <section className="section section-alt">
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
           <h2 style={{ marginBottom: '1rem', fontSize: '2.75rem' }}>Trusted by Local Restaurants</h2>
           <p style={{ fontSize: '1.2rem', color: '#323527' }}>
