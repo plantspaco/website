@@ -24,7 +24,7 @@ const Footer = () => {
             <img 
               src="https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/q5ghpdo7_Logo_PSC_1.png" 
               alt="Plant Spa Co." 
-              style={{ height: '70px', width: 'auto', marginBottom: '1rem' }}
+              style={{ height: '180px', width: 'auto', marginBottom: '1.5rem' }}
             />
             <p style={{ color: '#cbd5e1', fontSize: '14px', lineHeight: '1.6' }}>
               Nurturing plants, elevating spaces. Professional plant care, interior design, and botanical experiences.
