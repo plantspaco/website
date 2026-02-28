@@ -306,7 +306,7 @@ const Home = () => {
             <p style={{ fontSize: '1.15rem', fontWeight: '600', marginBottom: '0.5rem' }}>
               1 Year in Grow Club Equals:
             </p>
-            <p style={{ fontSize: '1.05rem', opacity: 0.95' }}>
+            <p style={{ fontSize: '1.05rem', opacity: 0.95 }}>
               1 Full Day Spa + 2 in-home follow-ups + $125 merchandise credit<br />
               <strong>OR</strong><br />
               2 Half Days (Spring & Fall) + 2 follow-ups + $75 merch credit
