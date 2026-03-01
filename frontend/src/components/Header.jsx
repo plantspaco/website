@@ -49,13 +49,10 @@ const Header = () => {
             gap: '0.15rem',
             fontSize: '0.9rem',
             fontWeight: '600',
-            letterSpacing: '0.5px'
+            letterSpacing: '0.5px',
+            color: '#3e8840'
           }}>
-            <span style={{ color: '#0091c2' }}>REPOT</span>
-            <span style={{ color: '#3e8840' }}>REFRESH</span>
-            <span style={{ color: '#0091c2' }}>RENEW</span>
-            <span style={{ color: '#3e8840' }}>RESTYLE</span>
-            <span style={{ color: '#0091c2' }}>REVIVE</span>
+            In-home repotting & ongoing plant care
           </div>
         </Link>
 
