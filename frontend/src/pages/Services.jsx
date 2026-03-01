@@ -10,8 +10,7 @@ const Services = () => {
       price: '$325',
       duration: 'Up to 2 hours',
       team: 'Two Plant Stylists',
-      description: 'Best for a few key plants needing care, touch-ups, or a small new setup.',
-      ideal: 'Perfect for maintaining 3-5 plants or a quick seasonal refresh'
+      description: 'Best for a few key plants needing care, touch-ups, or a small new setup.'
     },
     {
       id: 2,
@@ -19,8 +18,7 @@ const Services = () => {
       price: '$545',
       duration: 'Up to 4 hours',
       team: 'Two Plant Stylists',
-      description: 'Best for one room or zone with mixed needs: some rehab, some refresh, some styling.',
-      ideal: 'Ideal for 6-12 plants or a full room transformation'
+      description: 'Best for one room or zone with mixed needs: some rehab, some refresh, some styling.'
     },
     {
       id: 3,
@@ -28,8 +26,7 @@ const Services = () => {
       price: '$1,150',
       duration: 'Up to 8 hours',
       team: 'Two Plant Stylists',
-      description: 'Complete transformation for multiple rooms or extensive plant collections.',
-      ideal: 'Perfect for 15+ plants or whole-home plant care'
+      description: 'Complete transformation for multiple rooms or extensive plant collections.'
     },
     {
       id: 4,
@@ -37,8 +34,7 @@ const Services = () => {
       price: '$1,750',
       duration: 'Ongoing Program',
       team: 'Dedicated Team',
-      description: 'Concierge-level ongoing care, extended support, and follow-up for serious plant collections.',
-      ideal: 'Monthly visits with VIP support for plant collectors'
+      description: 'Concierge-level ongoing care, extended support, and follow-up for serious plant collections.'
     }
   ];
 
