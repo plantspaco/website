@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "./components/ui/sonner";
+import FloatingTopBar from "./components/FloatingTopBar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <FloatingTopBar />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
