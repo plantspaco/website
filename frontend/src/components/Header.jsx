@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Facebook, Instagram } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,6 +9,10 @@ const Header = () => {
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/services', label: 'Services' },
+    { path: '/grow-club', label: 'Grow Club' },
+    { path: '/events', label: 'Events' },
+    { path: '/corporate', label: 'Corporate' },
+    { path: '/social-impact', label: 'Social Impact' },
     { path: '/about', label: 'About' },
     { path: '/contact', label: 'Contact' }
   ];
@@ -17,12 +21,12 @@ const Header = () => {
 
   return (
     <header style={{
-      position: 'sticky',
-      top: 0,
+      position: 'static',
       backgroundColor: 'white',
       boxShadow: '0 2px 12px rgba(0,0,0,0.08)',
-      zIndex: 1000,
-      borderBottom: '1px solid #e8ecef'
+      zIndex: 999,
+      borderBottom: '1px solid #e8ecef',
+      marginTop: '60px'
     }}>
       <nav style={{
         maxWidth: '1280px',
@@ -37,13 +41,13 @@ const Header = () => {
           <img 
             src="https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/q5ghpdo7_Logo_PSC_1.png" 
             alt="Plant Spa Co." 
-            style={{ height: '140px', width: 'auto' }}
+            style={{ height: '120px', width: 'auto' }}
           />
           <div style={{ 
             display: 'flex', 
             flexDirection: 'column', 
             gap: '0.15rem',
-            fontSize: '0.95rem',
+            fontSize: '0.9rem',
             fontWeight: '600',
             letterSpacing: '0.5px'
           }}>
@@ -58,7 +62,7 @@ const Header = () => {
         {/* Desktop Navigation */}
         <div style={{
           display: 'flex',
-          gap: '2.5rem',
+          gap: '2rem',
           alignItems: 'center'
         }} className="desktop-nav">
           {navLinks.map((link) => (
@@ -69,7 +73,7 @@ const Header = () => {
                 textDecoration: 'none',
                 color: isActive(link.path) ? '#0091c2' : '#323527',
                 fontWeight: isActive(link.path) ? '600' : '500',
-                fontSize: '17px',
+                fontSize: '16px',
                 transition: 'color 0.2s ease',
                 position: 'relative'
               }}
@@ -80,19 +84,27 @@ const Header = () => {
             </Link>
           ))}
           
-          {/* CTA Button in Header */}
-          <a href="/contact">
-            <button className="btn-primary" style={{ 
-              padding: '12px 28px',
-              fontSize: '16px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '8px'
-            }}>
-              <Phone size={18} />
-              Free Consultation
-            </button>
-          </a>
+          {/* Social Icons */}
+          <div style={{ display: 'flex', gap: '1rem', marginLeft: '1rem', borderLeft: '2px solid #e8ecef', paddingLeft: '1.5rem' }}>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style={{
+              color: '#0091c2',
+              transition: 'transform 0.2s ease'
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
+            onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+            >
+              <Facebook size={22} />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{
+              color: '#0091c2',
+              transition: 'transform 0.2s ease'
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
+            onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+            >
+              <Instagram size={22} />
+            </a>
+          </div>
         </div>
 
         {/* Mobile Menu Button */}
@@ -136,12 +148,12 @@ const Header = () => {
               {link.label}
             </Link>
           ))}
-          <div style={{ padding: '14px 18px' }}>
-            <a href="/contact">
-              <button className="btn-primary" style={{ width: '100%' }}>
-                <Phone size={18} />
-                Free Consultation
-              </button>
+          <div style={{ display: 'flex', gap: '1.5rem', padding: '18px', justifyContent: 'center' }}>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <Facebook size={28} color="#0091c2" />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <Instagram size={28} color="#0091c2" />
             </a>
           </div>
         </div>
