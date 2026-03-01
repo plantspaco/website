@@ -10,13 +10,8 @@ const Services = () => {
       price: '$325',
       duration: 'Up to 2 hours',
       team: 'Two Plant Stylists',
-      description: 'Best for a few key plants needing simple repots, touch-ups, or a small new setup.',
-      features: [
-        'Professional assessment',
-        'Basic repotting & soil refresh',
-        'Pruning & cleaning',
-        'Placement optimization'
-      ]
+      description: 'Best for a few key plants needing care, touch-ups, or a small new setup.',
+      ideal: 'Perfect for maintaining 3-5 plants or a quick seasonal refresh'
     },
     {
       id: 2,
@@ -25,14 +20,7 @@ const Services = () => {
       duration: 'Up to 4 hours',
       team: 'Two Plant Stylists',
       description: 'Best for one room or zone with mixed needs: some rehab, some refresh, some styling.',
-      features: [
-        'Comprehensive plant evaluation',
-        'Full repotting service',
-        'Deep cleaning & grooming',
-        'Pest treatment if needed',
-        'Design consultation',
-        'Care instructions'
-      ]
+      ideal: 'Ideal for 6-12 plants or a full room transformation'
     },
     {
       id: 3,
@@ -41,15 +29,7 @@ const Services = () => {
       duration: 'Up to 8 hours',
       team: 'Two Plant Stylists',
       description: 'Complete transformation for multiple rooms or extensive plant collections.',
-      features: [
-        'Full-day dedicated service',
-        'Multiple room coverage',
-        'Complete plant makeover',
-        'Professional styling',
-        'Soil upgrades & repotting',
-        'Detailed care plan',
-        'Follow-up consultation'
-      ]
+      ideal: 'Perfect for 15+ plants or whole-home plant care'
     },
     {
       id: 4,
@@ -58,16 +38,19 @@ const Services = () => {
       duration: 'Ongoing Program',
       team: 'Dedicated Team',
       description: 'Concierge-level ongoing care, extended support, and follow-up for serious plant collections.',
-      features: [
-        'Monthly maintenance visits',
-        'Priority scheduling',
-        'Emergency plant rescue',
-        '24/7 plant care support',
-        'Seasonal adjustments',
-        'Premium plant sourcing',
-        'Quarterly health reports'
-      ]
+      ideal: 'Monthly visits with VIP support for plant collectors'
     }
+  ];
+
+  const includedServices = [
+    'Plant health & visual inspection',
+    'Root inspection + repotting when needed - we use BigFoot Gold which contains 950 million living microbes of diverse endo mycorrhizae and beneficial bacteria in every gram! This powerful formula encourages plant and root development',
+    'Fertilization when appropriate',
+    'Fresh soil refresh - we use custom premium blend using potting soil from a local nursery tailored to the plant type + decorative top dressing',
+    'Seasonal plant placement (indoors & outdoors) - we measure light using a professional light meter',
+    'Pruning, leaf cleaning & gentle leaf shining',
+    'Care tweaks based on your light and environment',
+    'White-glove setup and cleanup'
   ];
 
   return (
