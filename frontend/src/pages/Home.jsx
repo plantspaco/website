@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle, Phone, Calendar, Heart, Leaf, Home as HomeIcon, Sparkles, Users, Award } from 'lucide-react';
+import { ArrowRight, CheckCircle, Phone, Calendar, Heart, Leaf, Home as HomeIcon, Sparkles, Users, Award, Facebook, Instagram } from 'lucide-react';
 
 const Home = () => {
   return (
