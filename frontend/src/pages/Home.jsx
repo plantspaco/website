@@ -56,7 +56,7 @@ const Home = () => {
             }}>
               We <strong>repot, refresh, and restyle</strong> your plants at home — so you have lush, beautiful plants without the work.
             </p>
-            <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <Link to="/contact">
                 <button className="btn-primary" style={{ 
                   fontSize: '19px', 
@@ -72,6 +72,46 @@ const Home = () => {
                   <ArrowRight size={22} />
                 </button>
               </Link>
+            </div>
+            <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                padding: '12px 24px',
+                background: 'white',
+                borderRadius: '8px',
+                textDecoration: 'none',
+                color: '#0091c2',
+                fontWeight: '600',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                transition: 'all 0.2s ease'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
+              onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+              >
+                <Facebook size={20} />
+                Follow on Facebook
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                padding: '12px 24px',
+                background: 'white',
+                borderRadius: '8px',
+                textDecoration: 'none',
+                color: '#0091c2',
+                fontWeight: '600',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                transition: 'all 0.2s ease'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
+              onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+              >
+                <Instagram size={20} />
+                Follow on Instagram
+              </a>
             </div>
           </div>
           <div style={{
