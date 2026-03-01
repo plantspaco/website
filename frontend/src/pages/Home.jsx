@@ -276,30 +276,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Social Impact Section */}
-      <section className="section section-alt">
-        <div style={{ textAlign: 'center', maxWidth: '900px', margin: '0 auto' }}>
-          <h2 style={{ marginBottom: '1rem', fontSize: '2.75rem' }}>Growing More Than Plants 🌱</h2>
-          <div className="gold-divider" />
-          <p style={{
-            fontSize: '1.25rem',
-            color: '#323527',
-            lineHeight: '1.8',
-            marginBottom: '2rem'
-          }}>
-            A portion of our work supports <strong>foster youth</strong> through career mentorship, skill-building, and life development programs.
-          </p>
-          <p style={{
-            fontSize: '1.15rem',
-            color: '#323527',
-            lineHeight: '1.8',
-            fontStyle: 'italic'
-          }}>
-            We believe healthy plants and healthy communities grow together. 💚
-          </p>
-        </div>
-      </section>
-
       {/* Testimonials Section */}
       <section className="section">
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
