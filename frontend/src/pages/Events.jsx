@@ -43,12 +43,13 @@ const Events = () => {
         </button>
       </section>
 
-      {/* Upcoming Events */}
+      {/* Potential Workshops */}
       <section className="section">
         <div style={{ marginBottom: '4rem' }}>
-          <h2 style={{ marginBottom: '1rem' }}>Upcoming Events</h2>
-          <p style={{ fontSize: '1.125rem', color: '#64748b' }}>
-            Reserve your spot in our next workshop
+          <h2 style={{ marginBottom: '1rem' }}>Potential Workshops</h2>
+          <div className="gold-divider" />
+          <p style={{ fontSize: '1.125rem', color: '#323527' }}>
+            Exciting plant experiences we can bring to you
           </p>
         </div>
         <div style={{
@@ -69,29 +70,11 @@ const Events = () => {
               />
               <div style={{ padding: '1.5rem' }}>
                 <h3 style={{ marginBottom: '1rem', fontSize: '1.5rem' }}>{event.title}</h3>
-                <div style={{ marginBottom: '1.5rem' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
-                    <Calendar size={18} color="#ff5757" />
-                    <span style={{ color: '#64748b', fontSize: '14px' }}>{event.date}</span>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
-                    <Clock size={18} color="#ff5757" />
-                    <span style={{ color: '#64748b', fontSize: '14px' }}>{event.time}</span>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
-                    <MapPin size={18} color="#ff5757" />
-                    <span style={{ color: '#64748b', fontSize: '14px' }}>{event.location}</span>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <Users size={18} color="#ff5757" />
-                    <span style={{ color: '#64748b', fontSize: '14px' }}>{event.capacity}</span>
-                  </div>
-                </div>
-                <p style={{ color: '#64748b', marginBottom: '1rem', lineHeight: '1.6' }}>
+                <p style={{ color: '#323527', marginBottom: '1rem', lineHeight: '1.6' }}>
                   {event.description}
                 </p>
                 <p style={{ 
-                  color: '#ff5757', 
+                  color: '#0091c2', 
                   fontWeight: '700', 
                   fontSize: '1.25rem', 
                   marginBottom: '1rem' 
@@ -106,7 +89,7 @@ const Events = () => {
                   className="btn-primary" 
                   style={{ width: '100%' }}
                 >
-                  Book Your Spot
+                  Inquire About This Workshop
                 </button>
               </div>
             </div>
