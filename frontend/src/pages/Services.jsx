@@ -191,25 +191,10 @@ const Services = () => {
                   }}>
                     {service.description}
                   </p>
-                  <div style={{
-                    background: 'rgba(195, 218, 81, 0.1)',
-                    padding: '1.5rem',
-                    borderRadius: '8px',
-                    marginTop: '1rem'
-                  }}>
-                    <p style={{
-                      fontSize: '1.1rem',
-                      color: '#323527',
-                      fontWeight: '600',
-                      margin: 0
-                    }}>
-                      {service.ideal}
-                    </p>
-                  </div>
                 </div>
                 <div>
                   <Link to="/contact">
-                    <button className="btn-accent" style={{ width: '100%', marginTop: '2rem', fontSize: '17px' }}>
+                    <button className="btn-accent" style={{ width: '100%', fontSize: '17px' }}>
                       Book This Service
                       <ArrowRight size={20} />
                     </button>
