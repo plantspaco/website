@@ -74,8 +74,81 @@ const Services = () => {
         </Link>
       </section>
 
+      {/* What's Included - Universal for All Spa Days */}
+      <section className="section section-alt">
+        <div style={{
+          maxWidth: '1000px',
+          margin: '0 auto',
+          textAlign: 'center'
+        }}>
+          <h2 style={{ marginBottom: '1rem', fontSize: '2.75rem' }}>Included in Every Plant Spa Visit</h2>
+          <div className="gold-divider" />
+          <p style={{ fontSize: '1.2rem', color: '#323527', marginBottom: '3rem' }}>
+            Comprehensive care for your plants, no matter which package you choose
+          </p>
+          
+          <div style={{
+            textAlign: 'left',
+            background: 'white',
+            borderRadius: '16px',
+            padding: '3rem',
+            boxShadow: '0 8px 24px rgba(0,0,0,0.08)',
+            border: '2px solid #d4a65e'
+          }}>
+            {includedServices.map((service, idx) => (
+              <div key={idx} style={{
+                display: 'flex',
+                alignItems: 'flex-start',
+                gap: '1.25rem',
+                marginBottom: idx < includedServices.length - 1 ? '1.75rem' : '0',
+                paddingBottom: idx < includedServices.length - 1 ? '1.75rem' : '0',
+                borderBottom: idx < includedServices.length - 1 ? '1px solid #f0ede8' : 'none'
+              }}>
+                <CheckCircle size={24} color="#3e8840" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <p style={{
+                  fontSize: '1.1rem',
+                  color: '#323527',
+                  lineHeight: '1.7',
+                  margin: 0
+                }}>
+                  {service}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div style={{
+            marginTop: '3rem',
+            padding: '2rem',
+            background: 'linear-gradient(135deg, rgba(195, 218, 81, 0.1) 0%, rgba(212, 166, 94, 0.1) 100%)',
+            borderRadius: '12px',
+            border: '2px solid #c3da51'
+          }}>
+            <p style={{
+              fontSize: '1.15rem',
+              color: '#323527',
+              lineHeight: '1.8',
+              margin: 0,
+              fontWeight: '500'
+            }}>
+              💚 <strong>Premium Quality Guarantee:</strong> We use BigFoot Gold soil amendment with 950 million living microbes per gram, plus custom soil blends from local nurseries tailored to each plant type. Your plants get the absolute best care possible.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Services Grid */}
       <section className="section">
+        <div style={{
+          textAlign: 'center',
+          marginBottom: '4rem'
+        }}>
+          <h2 style={{ marginBottom: '1rem', fontSize: '2.75rem' }}>Choose Your Package</h2>
+          <div className="gold-divider" />
+          <p style={{ fontSize: '1.2rem', color: '#323527' }}>
+            The difference is time and scope — all packages include our full spa service
+          </p>
+        </div>
         <div style={{
           display: 'grid',
           gap: '3rem'
