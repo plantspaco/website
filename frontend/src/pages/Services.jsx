@@ -62,6 +62,9 @@ const Services = () => {
         textAlign: 'center'
       }}>
         <h1 style={{ marginBottom: '1rem', fontSize: '3.5rem' }}>Plant Care Services for Your Home</h1>
+        <p style={{ fontSize: '1.5rem', color: '#0091c2', fontWeight: '600', marginBottom: '1rem', fontStyle: 'italic' }}>
+          Give your plants the spa day they deserve
+        </p>
         <div className="gold-divider" />
         <p style={{ fontSize: '1.3rem', color: '#323527', maxWidth: '800px', margin: '0 auto 2rem' }}>
           Professional, personalized plant care that comes to you
