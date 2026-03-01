@@ -192,22 +192,23 @@ const Services = () => {
                   }}>
                     {service.description}
                   </p>
+                  <div style={{
+                    background: 'rgba(195, 218, 81, 0.1)',
+                    padding: '1.5rem',
+                    borderRadius: '8px',
+                    marginTop: '1rem'
+                  }}>
+                    <p style={{
+                      fontSize: '1.1rem',
+                      color: '#323527',
+                      fontWeight: '600',
+                      margin: 0
+                    }}>
+                      {service.ideal}
+                    </p>
+                  </div>
                 </div>
                 <div>
-                  <h4 style={{ marginBottom: '1.5rem', color: '#231f20', fontSize: '1.25rem' }}>What's Included:</h4>
-                  <ul style={{ listStyle: 'none', padding: 0 }}>
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} style={{ 
-                        display: 'flex', 
-                        alignItems: 'flex-start', 
-                        gap: '1rem', 
-                        marginBottom: '1rem' 
-                      }}>
-                        <CheckCircle size={22} color="#3e8840" style={{ flexShrink: 0, marginTop: '2px' }} />
-                        <span style={{ fontSize: '1.05rem', color: '#323527', lineHeight: '1.6' }}>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
                   <Link to="/contact">
                     <button className="btn-accent" style={{ width: '100%', marginTop: '2rem', fontSize: '17px' }}>
                       Book This Service
