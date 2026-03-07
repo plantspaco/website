@@ -578,8 +578,8 @@ const Home = () => {
             {[
               { emoji: '🚨', text: 'Roots escaping from the bottom of the pot' },
               { emoji: '😬', text: 'Soil that repels water instead of absorbing it' },
-              { emoji: '🐛', text: 'Tiny uninvited guests you'd rather not think about' },
-              { emoji: '😶', text: 'You\'ve been "meaning to deal with it" since last spring' }
+              { emoji: '🐛', text: 'Tiny uninvited guests you would rather not think about' },
+              { emoji: '😶', text: 'You have been meaning to deal with it since last spring' }
             ].map((item, idx) => (
               <div key={idx} style={{
                 display: 'flex',
