@@ -381,7 +381,7 @@ const Home = () => {
           <p style={{
             fontSize: '0.95rem',
             marginTop: '1.5rem',
-            opacity: 0.85',
+            opacity: 0.85,
             fontStyle: 'italic'
           }}>
             Free discovery call. No commitment. No judgment!
