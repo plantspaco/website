@@ -18,13 +18,13 @@ Build a premium, conversion-optimized website for "Plant Spa Co." - a plant care
 ## What's Been Implemented
 
 ### Pages
-1. **Home** (`/`) - Hero section, services overview, testimonials, video testimonial, before/after gallery, service area info, CTAs
-2. **Services** (`/services`) - Simplified package listings, included services
+1. **Home** (`/`) - Hero section (lighter font), services overview, testimonials, video testimonial, before/after gallery, TLC callout with cartoon, service area info, CTAs
+2. **Services** (`/services`) - Simplified package listings (no descriptions), included services
 3. **Grow Club** (`/grow-club`) - Membership details with pricing, benefits, 1-year rewards
-4. **About** (`/about`) - Team bios, company values, work gallery, brochure download
+4. **About** (`/about`) - Team bios (Maureen Headland - Founder, Francene Kelly - Master Gardener), company values, brochure download
 5. **Social Impact** (`/social-impact`) - Foster care youth support mission
 6. **Events** (`/events`) - Workshop listings
-7. **Contact** (`/contact`) - Contact form
+7. **Contact** (`/contact`) - High-conversion form with plant diagnosis focus, photo upload
 8. **Shop** (`/shop`) - Plant products (mock data)
 
 ### Components
@@ -33,17 +33,42 @@ Build a premium, conversion-optimized website for "Plant Spa Co." - a plant care
 - `FloatingTopBar.jsx` - Sticky CTA bar with phone and action buttons
 
 ### Recent Updates (December 2025)
-- Fixed hero text color for better readability (white text with shadow)
-- Added video testimonial section with `Kim_short_testimonial.mp4`
-- Added horizontal scrolling before/after gallery with uploaded plant images
-- Replaced "Failure" section with friendlier "Your Plants Deserve Some TLC" callout
-- Added image to Small Business Care card
-- Added icons to "How It Works" section
-- Simplified Services page package listings (removed descriptions)
-- Removed Corporate page
-- Created dedicated Grow Club page with full membership details
-- Created Social Impact page (moved from About)
-- Updated navigation with About dropdown containing Social Impact
+**Homepage:**
+- Fixed hero text to lighter font weight (500 vs 800)
+- Added cartoon image to TLC callout section
+
+**About Page:**
+- Updated Maureen Headland bio with family photo and full story (OBX native, USAID career, ponytail palm story)
+- Updated Francene Kelly bio with Hawaii photo (Master Gardener, 50+ years NC, retired teacher)
+- Removed gallery section
+
+**Contact Page - High Conversion Redesign:**
+- Added intro box: "Not sure what's wrong with your plant?"
+- Simplified form fields:
+  - Name
+  - Phone Number (required - "so we can text you back")
+  - Email (optional)
+  - Type of Help Needed (dropdown: Plant Rescue, Repotting/Spa Day, Plant Diagnosis, Event/Plant & Pour, Grow Club, Not sure yet)
+  - Tell Us About Your Plant (message)
+  - Upload Plant Photo (optional with preview)
+- CTA button changed to "Get Your Plant Diagnosis"
+- Added "Prefer to Text?" callout with Text Us Now button
+
+---
+
+## Team Information
+
+### Maureen Headland - Founder
+- North Carolina native (OBX born, Morrisville rooted)
+- 15 years directing data strategy for global health programs (USAID)
+- Founded Plant Spa Co. after USAID ended in 2025
+- Inspiration: root-bound survivor plant and giant ponytail palm story
+
+### Francene Kelly - Master Gardener
+- North Carolina fixture for 50+ years
+- Retired public school teacher
+- 11 years certified Master Gardener
+- Expertise: Indoor and outdoor plants
 
 ---
 
@@ -64,15 +89,19 @@ Build a premium, conversion-optimized website for "Plant Spa Co." - a plant care
 
 ---
 
-## Assets
+## Assets Used
 - Logo: `Logo_PSC_1.png`
 - Testimonial Video: `Kim_short_testimonial.mp4`
 - Before/After Images: Peace lily and snake plant transformations
 - Small Business Image: `scott-webb-5TBmyEGFS24-unsplash.jpg`
+- Plant Cartoon: `Plant_cartoon.jpg`
+- Headland Family: `Headland_family.JPG`
+- Francene Kelly: `Mom_hawaii.jpg`
 
 ---
 
 ## Notes
 - All frontend data is currently mocked via `mockData.js`
 - Backend is scaffolded but not integrated
+- Contact form currently shows success toast but doesn't send data
 - Social media links point to placeholder URLs

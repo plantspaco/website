@@ -46,13 +46,14 @@ const Home = () => {
           padding: '3rem 2rem'
         }}>
           <h1 style={{
-            fontSize: '4rem',
-            fontWeight: '800',
+            fontSize: '3.5rem',
+            fontWeight: '500',
             marginBottom: '1.5rem',
-            lineHeight: '1.1',
+            lineHeight: '1.2',
             maxWidth: '800px',
             color: 'white',
-            textShadow: '2px 2px 8px rgba(0,0,0,0.8)'
+            textShadow: '2px 2px 8px rgba(0,0,0,0.8)',
+            letterSpacing: '-0.5px'
           }}>
             Professional Houseplant Service for Homes & Small Businesses
           </h1>
@@ -646,47 +647,66 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 11. FRIENDLY CALLOUT BOX (Replaces Failure Section) */}
+      {/* 11. FRIENDLY CALLOUT BOX WITH CARTOON */}
       <section className="section">
         <div style={{
-          maxWidth: '900px',
+          maxWidth: '1000px',
           margin: '0 auto',
           background: 'linear-gradient(135deg, rgba(195, 218, 81, 0.15) 0%, rgba(62, 136, 64, 0.1) 100%)',
           borderRadius: '20px',
           padding: '3rem',
-          border: '3px solid #c3da51',
-          textAlign: 'center'
+          border: '3px solid #c3da51'
         }}>
           <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '1rem',
-            marginBottom: '1.5rem'
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+            gap: '3rem',
+            alignItems: 'center'
           }}>
-            <Leaf size={36} color="#3e8840" />
-            <h2 style={{ fontSize: '2rem', margin: 0, color: '#323527' }}>
-              Your Plants Deserve Some TLC
-            </h2>
-          </div>
-          
-          <p style={{
-            fontSize: '1.2rem',
-            color: '#323527',
-            lineHeight: '1.8',
-            marginBottom: '1.5rem'
-          }}>
-            Whether they're overdue for a repot, looking a little sad, or you just want them to thrive — we're here to help. No guilt, no lectures, just expert care that makes a difference.
-          </p>
+            <div style={{ textAlign: 'center' }}>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_cbf2ef19-9556-45ea-9903-44193107f7e5/artifacts/w4xk06s5_Plant_cartoon.jpg"
+                alt="Plant therapy cartoon"
+                style={{
+                  maxWidth: '100%',
+                  height: 'auto',
+                  borderRadius: '16px',
+                  boxShadow: '0 8px 24px rgba(0,0,0,0.1)'
+                }}
+              />
+            </div>
+            <div style={{ textAlign: 'left' }}>
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '1rem',
+                marginBottom: '1.5rem'
+              }}>
+                <Leaf size={36} color="#3e8840" />
+                <h2 style={{ fontSize: '2rem', margin: 0, color: '#323527' }}>
+                  Your Plants Deserve Some TLC
+                </h2>
+              </div>
+              
+              <p style={{
+                fontSize: '1.2rem',
+                color: '#323527',
+                lineHeight: '1.8',
+                marginBottom: '1.5rem'
+              }}>
+                Whether they're overdue for a repot, looking a little sad, or you just want them to thrive — we're here to help. No guilt, no lectures, just expert care that makes a difference.
+              </p>
 
-          <p style={{
-            fontSize: '1.1rem',
-            color: '#3e8840',
-            fontWeight: '600',
-            fontStyle: 'italic'
-          }}>
-            Every plant has potential. Let us help yours shine!
-          </p>
+              <p style={{
+                fontSize: '1.1rem',
+                color: '#3e8840',
+                fontWeight: '600',
+                fontStyle: 'italic'
+              }}>
+                Every plant has potential. Let us help yours shine!
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

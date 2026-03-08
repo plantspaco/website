@@ -58,7 +58,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Story Section - Founder & Team */}
+      {/* Meet Our Team Section */}
       <section className="section section-alt">
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <h2 style={{ marginBottom: '1rem', fontSize: '2.75rem' }}>Meet Our Team</h2>
@@ -68,7 +68,7 @@ const About = () => {
           </p>
         </div>
 
-        {/* Founder Section */}
+        {/* Founder Section - Maureen Headland */}
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
@@ -77,15 +77,15 @@ const About = () => {
           marginBottom: '5rem'
         }}>
           <div style={{
-            height: '450px',
+            height: '500px',
             borderRadius: '20px',
             overflow: 'hidden',
             boxShadow: '0 20px 60px rgba(0,0,0,0.12)',
             border: '4px solid #d4a65e'
           }}>
             <img 
-              src="https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/qjr4pt4d_IMG_3370.HEIC" 
-              alt="Business Owner"
+              src="https://customer-assets.emergentagent.com/job_cbf2ef19-9556-45ea-9903-44193107f7e5/artifacts/9rwi6ix8_Headland_family.JPG" 
+              alt="Maureen Headland - Founder"
               style={{
                 width: '100%',
                 height: '100%',
@@ -94,25 +94,34 @@ const About = () => {
             />
           </div>
           <div>
-            <h3 style={{ marginBottom: '0.5rem', fontSize: '2rem', color: '#3e8840' }}>Business Owner & Founder</h3>
+            <h3 style={{ marginBottom: '0.5rem', fontSize: '2rem', color: '#3e8840' }}>Maureen Headland</h3>
             <p style={{ 
               fontSize: '1.15rem', 
               color: '#0091c2', 
               fontWeight: '600',
               marginBottom: '1.5rem'
             }}>
-              Bringing Care & Expertise to Your Home
+              Founder
             </p>
-            <p style={{ color: '#323527', fontSize: '1.1rem', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              Plant Spa Co. was born from a deep love of plants and a passion for helping people create beautiful, thriving spaces. Whether you're a busy parent, a plant enthusiast, or someone who just wants healthier greenery at home, I'm here to make plant care easy and enjoyable.
+            <p style={{ color: '#323527', fontSize: '1.05rem', marginBottom: '1.25rem', lineHeight: '1.8' }}>
+              I'm a North Carolina native — OBX born, Morrisville rooted. For 15 years I directed data strategy for global health programs eliminating disease in West Africa. When USAID ended in 2025, I took everything I know about building expert teams and solving hard problems — and brought it home.
             </p>
-            <p style={{ color: '#323527', fontSize: '1.1rem', lineHeight: '1.8' }}>
-              Our approach is personal, professional, and centered around <strong>you and your plants</strong>. We believe everyone deserves a home filled with healthy, happy plants — and we're here to make that happen.
+            <p style={{ color: '#323527', fontSize: '1.05rem', marginBottom: '1.25rem', lineHeight: '1.8' }}>
+              The idea for Plant Spa Co. hit me staring at my own root-bound survivor plant after a big move and downsize. Then came the moment I begged my husband to haul our giant ponytail palm inside for winter — to which he looked at me and asked how much we really liked her. She's fine. She's thriving. He came around.
+            </p>
+            <p style={{ color: '#323527', fontSize: '1.05rem', marginBottom: '1.25rem', lineHeight: '1.8' }}>
+              But that moment stuck with me. People hire landscapers for their yards without thinking twice, while their indoor plants — some of them irreplaceable, all of them living things — are left to figure it out alone. And let's be honest: repotting a mature plant is not a quick clean job. It's heavy, it's dirty, and half the internet will tell you something different about how to do it.
+            </p>
+            <p style={{ color: '#323527', fontSize: '1.05rem', marginBottom: '1.25rem', lineHeight: '1.8' }}>
+              Plant Spa Co. exists to fix that. I've spent my career putting the right experts in the right places to make hard things happen. Now I'm doing it for your living room.
+            </p>
+            <p style={{ color: '#3e8840', fontSize: '1.15rem', fontWeight: '600', fontStyle: 'italic' }}>
+              Your plants are in good hands. Literally.
             </p>
           </div>
         </div>
 
-        {/* Master Gardener Section */}
+        {/* Master Gardener Section - Francene Kelly */}
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
@@ -121,15 +130,15 @@ const About = () => {
         }}>
           <div style={{ order: 2 }}>
             <div style={{
-              height: '450px',
+              height: '500px',
               borderRadius: '20px',
               overflow: 'hidden',
               boxShadow: '0 20px 60px rgba(0,0,0,0.12)',
               border: '4px solid #3e8840'
             }}>
               <img 
-                src="https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/klqm94fp_IMG_3807.HEIC" 
-                alt="Master Gardener"
+                src="https://customer-assets.emergentagent.com/job_cbf2ef19-9556-45ea-9903-44193107f7e5/artifacts/udj7ifzr_Mom_hawaii.jpg" 
+                alt="Francene Kelly - Master Gardener"
                 style={{
                   width: '100%',
                   height: '100%',
@@ -139,20 +148,23 @@ const About = () => {
             </div>
           </div>
           <div style={{ order: 1 }}>
-            <h3 style={{ marginBottom: '0.5rem', fontSize: '2rem', color: '#0091c2' }}>Our Master Gardener</h3>
+            <h3 style={{ marginBottom: '0.5rem', fontSize: '2rem', color: '#0091c2' }}>Francene Kelly</h3>
             <p style={{ 
               fontSize: '1.15rem', 
               color: '#3e8840', 
               fontWeight: '600',
               marginBottom: '1.5rem'
             }}>
-              Expert Knowledge You Can Trust
+              Our Resident Master Gardener
             </p>
-            <p style={{ color: '#323527', fontSize: '1.1rem', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              We're proud to have a <strong>Master Gardener</strong> on our team (my mother!), bringing decades of horticultural expertise, education, and deep plant knowledge to every service we provide.
+            <p style={{ color: '#323527', fontSize: '1.05rem', marginBottom: '1.25rem', lineHeight: '1.8' }}>
+              A North Carolina fixture for more than 50 years, she spent her career shaping young minds as a public school teacher before retiring to do what she'd always loved: grow things. Indoor, outdoor, it doesn't matter — if it's a plant, she's probably already grown it, saved it, or figured out exactly why it was struggling.
             </p>
-            <p style={{ color: '#323527', fontSize: '1.1rem', lineHeight: '1.8' }}>
-              With years of experience and certification, our Master Gardener ensures your plants receive <strong>professional, science-backed care</strong> — from diagnosing issues to optimizing growth. When you work with Plant Spa Co., you're getting true expertise rooted in a lifetime of plant passion.
+            <p style={{ color: '#323527', fontSize: '1.05rem', marginBottom: '1.25rem', lineHeight: '1.8' }}>
+              With 11 years as a certified Master Gardener, she brings the kind of knowledge you can't Google your way to. She didn't exactly volunteer for this role — but once she saw the plants that needed her, resistance was futile.
+            </p>
+            <p style={{ color: '#3e8840', fontSize: '1.15rem', fontWeight: '600', fontStyle: 'italic' }}>
+              We're lucky she's ours.
             </p>
           </div>
         </div>
@@ -212,52 +224,8 @@ const About = () => {
         </div>
       </section>
 
-      {/* Photo Gallery */}
-      <section className="section section-alt">
-        <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-          <h2 style={{ marginBottom: '1rem' }}>Our Work</h2>
-          <p style={{ fontSize: '1.125rem', color: '#64748b' }}>
-            A glimpse of the botanical transformations we've created
-          </p>
-        </div>
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-          gap: '1.5rem'
-        }}>
-          {[
-            'https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/klqm94fp_IMG_3807.HEIC',
-            'https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/qjr4pt4d_IMG_3370.HEIC',
-            'https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/zmnwupyn_IMG_3272.HEIC',
-            'https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/131m6xtd_IMG_3341.HEIC'
-          ].map((img, idx) => (
-            <div key={idx} style={{
-              height: '350px',
-              borderRadius: '12px',
-              overflow: 'hidden',
-              boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-              transition: 'transform 0.3s ease',
-              cursor: 'pointer'
-            }}
-            onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-            onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
-            >
-              <img 
-                src={img} 
-                alt={`Gallery ${idx + 1}`}
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover'
-                }}
-              />
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Brochure Section */}
-      <section className="section">
+      <section className="section section-alt">
         <div style={{
           background: 'linear-gradient(135deg, #00A2E8 0%, #38753E 100%)',
           borderRadius: '12px',
@@ -317,7 +285,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section section-alt">
+      <section className="section">
         <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
           <h2 style={{ marginBottom: '1.5rem' }}>Ready to Experience Plant Spa Co.?</h2>
           <p style={{ fontSize: '1.125rem', color: '#64748b', marginBottom: '2rem', lineHeight: '1.7' }}>
