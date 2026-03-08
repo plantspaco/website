@@ -58,8 +58,8 @@ const GrowClub = () => {
         <p style={{ fontSize: '1.5rem', color: '#3e8840', fontWeight: '600', marginBottom: '1rem' }}>
           $100 / month
         </p>
-        <p style={{ fontSize: '1.25rem', color: '#0091c2', fontWeight: '500', fontStyle: 'italic' }}>
-          (every dollar becomes credit)
+        <p style={{ fontSize: '1.15rem', color: '#323527', fontWeight: '500', maxWidth: '600px', margin: '0 auto', lineHeight: '1.7' }}>
+          Spend your credit anytime — but if you let it build, that's <strong style={{ color: '#0091c2' }}>$1,200/year</strong> toward Spa Days, follow-ups, and merchandise.
         </p>
         <div className="gold-divider" style={{ margin: '2rem auto' }} />
       </section>
