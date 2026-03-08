@@ -1,8 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle, MessageCircle, Calendar, MapPin, Star, Leaf, Heart, AlertTriangle } from 'lucide-react';
+import { ArrowRight, CheckCircle, MessageCircle, Calendar, MapPin, Star, Leaf, Heart, Camera, Send, Sparkles, Play } from 'lucide-react';
 
 const Home = () => {
+  // Before/After gallery data
+  const beforeAfterGallery = [
+    {
+      before: 'https://customer-assets.emergentagent.com/job_cbf2ef19-9556-45ea-9903-44193107f7e5/artifacts/cg236ckz_before_peacelily%20%282%29.jpg',
+      after: 'https://customer-assets.emergentagent.com/job_cbf2ef19-9556-45ea-9903-44193107f7e5/artifacts/rwbt80b0_After_peacelily%20%282%29.png',
+      title: 'Peace Lily Revival',
+      description: 'From struggling to stunning'
+    },
+    {
+      before: 'https://customer-assets.emergentagent.com/job_cbf2ef19-9556-45ea-9903-44193107f7e5/artifacts/z683pgx4_Kim_b4_snake_outside.jpg.jpg',
+      after: 'https://customer-assets.emergentagent.com/job_cbf2ef19-9556-45ea-9903-44193107f7e5/artifacts/bdyhhrv1_Snake_After_Kim.pdf.png',
+      title: 'Snake Plant Transformation',
+      description: 'Repotted and thriving'
+    }
+  ];
+
   return (
     <div>
       {/* 1. HERO SECTION */}
@@ -19,7 +35,7 @@ const Home = () => {
         <div style={{
           position: 'absolute',
           inset: 0,
-          background: 'linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 100%)'
+          background: 'linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%)'
         }} />
         
         <div style={{
@@ -27,8 +43,7 @@ const Home = () => {
           zIndex: 1,
           maxWidth: '1280px',
           margin: '0 auto',
-          padding: '3rem 2rem',
-          color: '#c3da51'
+          padding: '3rem 2rem'
         }}>
           <h1 style={{
             fontSize: '4rem',
@@ -36,7 +51,8 @@ const Home = () => {
             marginBottom: '1.5rem',
             lineHeight: '1.1',
             maxWidth: '800px',
-            textShadow: '2px 2px 4px rgba(0,0,0,0.6)'
+            color: 'white',
+            textShadow: '2px 2px 8px rgba(0,0,0,0.8)'
           }}>
             Professional Houseplant Service for Homes & Small Businesses
           </h1>
@@ -46,8 +62,8 @@ const Home = () => {
             maxWidth: '700px',
             lineHeight: '1.6',
             fontWeight: '400',
-            opacity: 0.95,
-            textShadow: '1px 1px 3px rgba(0,0,0,0.6)'
+            color: 'white',
+            textShadow: '1px 1px 4px rgba(0,0,0,0.8)'
           }}>
             Healthy, thriving plants making your space beautiful and inviting.
           </p>
@@ -230,7 +246,7 @@ const Home = () => {
             <p style={{ fontSize: '1.1rem', color: '#323527', lineHeight: '1.7', marginBottom: '1.5rem' }}>
               $100/month that becomes credit toward services. Founding members save 15% on Spa Days, get priority scheduling, and earn rewards for referrals.
             </p>
-            <Link to="/shop">
+            <Link to="/grow-club">
               <button className="btn-primary" style={{ width: '100%', fontSize: '17px' }}>
                 Join Grow Club
                 <ArrowRight size={20} />
@@ -238,20 +254,20 @@ const Home = () => {
             </Link>
           </div>
 
-          {/* Card 3 - Business Care */}
+          {/* Card 3 - Business Care - WITH IMAGE */}
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{
               width: '100%',
               height: '220px',
               borderRadius: '12px',
               overflow: 'hidden',
-              marginBottom: '1.5rem',
-              background: 'linear-gradient(135deg, #3e8840 0%, #0091c2 100%)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center'
+              marginBottom: '1.5rem'
             }}>
-              <Leaf size={80} color="white" style={{ opacity: 0.3 }} />
+              <img 
+                src="https://customer-assets.emergentagent.com/job_cbf2ef19-9556-45ea-9903-44193107f7e5/artifacts/8xx5qyi8_scott-webb-5TBmyEGFS24-unsplash.jpg"
+                alt="Small Business Plant Care"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
             </div>
             <h3 style={{ fontSize: '1.75rem', marginBottom: '1rem' }}>Small Business Care</h3>
             <p style={{ fontSize: '1.1rem', color: '#323527', lineHeight: '1.7', marginBottom: '1.5rem' }}>
@@ -267,7 +283,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 5. HOW IT WORKS SECTION */}
+      {/* 5. HOW IT WORKS SECTION - WITH ICONS */}
       <section className="section">
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <h2 style={{ fontSize: '2.75rem', marginBottom: '1rem' }}>Three steps to beautiful plants.</h2>
@@ -284,17 +300,20 @@ const Home = () => {
           {[
             {
               step: '1',
+              icon: <Camera size={32} color="white" />,
               title: 'Share Your Plants & Vision',
               description: 'Send us a few photos and tell us what you\'re looking for — new planters, better light, a fresh style.'
             },
             {
               step: '2',
+              icon: <Send size={32} color="white" />,
               title: 'We Build Your Plan',
               description: 'We recommend the right package and arrive with everything your collection needs. No trips to the store, no guesswork.',
               extra: 'We bring the basics. Need new planters or plants? We can source those too.'
             },
             {
               step: '3',
+              icon: <Sparkles size={32} color="white" />,
               title: 'Plant Spa Day at Home',
               description: 'We handle everything while you relax. You just enjoy the results.'
             }
@@ -308,8 +327,8 @@ const Home = () => {
               border: '2px solid #f0ede8'
             }}>
               <div style={{
-                width: '70px',
-                height: '70px',
+                width: '80px',
+                height: '80px',
                 borderRadius: '50%',
                 background: 'linear-gradient(135deg, #3e8840 0%, #0091c2 100%)',
                 color: 'white',
@@ -317,11 +336,9 @@ const Home = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 margin: '0 auto 1.5rem',
-                fontSize: '2rem',
-                fontWeight: '800',
                 boxShadow: '0 8px 20px rgba(62, 136, 64, 0.3)'
               }}>
-                {item.step}
+                {item.icon}
               </div>
               <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>{item.title}</h3>
               <p style={{ fontSize: '1.05rem', color: '#323527', lineHeight: '1.7' }}>
@@ -391,8 +408,147 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 7. SERVICE AREA MAP */}
+      {/* 7. VIDEO TESTIMONIAL SECTION */}
+      <section className="section">
+        <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+          <h2 style={{ fontSize: '2.75rem', marginBottom: '1rem' }}>
+            Hear From Our Clients
+          </h2>
+          <div className="gold-divider" />
+          <p style={{ fontSize: '1.25rem', color: '#64748b' }}>
+            Real stories from real plant parents
+          </p>
+        </div>
+
+        <div style={{
+          maxWidth: '900px',
+          margin: '0 auto',
+          borderRadius: '20px',
+          overflow: 'hidden',
+          boxShadow: '0 20px 60px rgba(0,0,0,0.15)',
+          position: 'relative'
+        }}>
+          <video 
+            controls 
+            style={{ width: '100%', height: 'auto', display: 'block' }}
+            poster="https://customer-assets.emergentagent.com/job_cbf2ef19-9556-45ea-9903-44193107f7e5/artifacts/rwbt80b0_After_peacelily%20%282%29.png"
+          >
+            <source src="https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/yrx0wvu7_Kim_short_testimonial.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div style={{
+          textAlign: 'center',
+          marginTop: '2rem',
+          padding: '1.5rem',
+          background: 'linear-gradient(135deg, rgba(195, 218, 81, 0.1) 0%, rgba(212, 166, 94, 0.1) 100%)',
+          borderRadius: '12px',
+          maxWidth: '900px',
+          margin: '2rem auto 0',
+          border: '2px solid #c3da51'
+        }}>
+          <p style={{ fontSize: '1.15rem', color: '#323527', lineHeight: '1.7', fontStyle: 'italic' }}>
+            "Maureen took my plants from sad to fab. 10 out of 10!" — <strong>Kim, Hillsborough, NC</strong>
+          </p>
+        </div>
+      </section>
+
+      {/* 8. BEFORE/AFTER GALLERY - Horizontal Scroll */}
       <section className="section section-alt">
+        <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+          <h2 style={{ fontSize: '2.75rem', marginBottom: '1rem' }}>
+            Before & After Transformations
+          </h2>
+          <div className="gold-divider" />
+          <p style={{ fontSize: '1.25rem', color: '#64748b' }}>
+            See the magic of a Plant Spa Day
+          </p>
+        </div>
+
+        <div style={{
+          overflowX: 'auto',
+          paddingBottom: '1rem',
+          WebkitOverflowScrolling: 'touch'
+        }}>
+          <div style={{
+            display: 'flex',
+            gap: '2rem',
+            minWidth: 'min-content',
+            padding: '0 2rem'
+          }}>
+            {beforeAfterGallery.map((item, idx) => (
+              <div key={idx} style={{
+                minWidth: '500px',
+                background: 'white',
+                borderRadius: '16px',
+                overflow: 'hidden',
+                boxShadow: '0 8px 32px rgba(0,0,0,0.1)',
+                border: '2px solid #f0ede8'
+              }}>
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: '1fr 1fr',
+                  gap: '0'
+                }}>
+                  <div style={{ position: 'relative' }}>
+                    <img 
+                      src={item.before}
+                      alt={`${item.title} - Before`}
+                      style={{ width: '100%', height: '280px', objectFit: 'cover' }}
+                    />
+                    <div style={{
+                      position: 'absolute',
+                      bottom: '10px',
+                      left: '10px',
+                      background: 'rgba(0,0,0,0.7)',
+                      color: 'white',
+                      padding: '6px 14px',
+                      borderRadius: '20px',
+                      fontSize: '13px',
+                      fontWeight: '600'
+                    }}>
+                      BEFORE
+                    </div>
+                  </div>
+                  <div style={{ position: 'relative' }}>
+                    <img 
+                      src={item.after}
+                      alt={`${item.title} - After`}
+                      style={{ width: '100%', height: '280px', objectFit: 'cover' }}
+                    />
+                    <div style={{
+                      position: 'absolute',
+                      bottom: '10px',
+                      right: '10px',
+                      background: '#3e8840',
+                      color: 'white',
+                      padding: '6px 14px',
+                      borderRadius: '20px',
+                      fontSize: '13px',
+                      fontWeight: '600'
+                    }}>
+                      AFTER
+                    </div>
+                  </div>
+                </div>
+                <div style={{ padding: '1.5rem', textAlign: 'center' }}>
+                  <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem', color: '#323527' }}>
+                    {item.title}
+                  </h3>
+                  <p style={{ color: '#64748b', fontSize: '1rem' }}>{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <p style={{ textAlign: 'center', color: '#64748b', marginTop: '1rem', fontSize: '0.95rem' }}>
+          Scroll to see more transformations
+        </p>
+      </section>
+
+      {/* 9. SERVICE AREA MAP */}
+      <section className="section">
         <div style={{ textAlign: 'center', maxWidth: '900px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '2.75rem', marginBottom: '1rem' }}>We Come to You</h2>
           <div className="gold-divider" />
@@ -436,8 +592,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 8. SUCCESS SECTION */}
-      <section className="section">
+      {/* 10. SUCCESS SECTION - Testimonials */}
+      <section className="section section-alt">
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <h2 style={{ fontSize: '2.75rem', marginBottom: '1rem' }}>
             This is what your plants — and your space — can look like.
@@ -445,24 +601,6 @@ const Home = () => {
           <div className="gold-divider" />
           <p style={{ fontSize: '1.25rem', color: '#64748b' }}>
             Real homes. Real transformations. Real relief.
-          </p>
-        </div>
-
-        {/* Before/After Note */}
-        <div style={{
-          background: 'linear-gradient(135deg, rgba(195, 218, 81, 0.1) 0%, rgba(212, 166, 94, 0.1) 100%)',
-          padding: '2.5rem',
-          borderRadius: '16px',
-          marginBottom: '4rem',
-          border: '2px solid #c3da51',
-          maxWidth: '1000px',
-          margin: '0 auto 4rem'
-        }}>
-          <p style={{ fontSize: '1.15rem', color: '#323527', lineHeight: '1.8', textAlign: 'center' }}>
-            <strong>Before:</strong> A beloved peace lily — a gift from her father's funeral — root-bound, dusty, and overdue for care.
-          </p>
-          <p style={{ fontSize: '1.15rem', color: '#3e8840', lineHeight: '1.8', textAlign: 'center', marginTop: '1rem', fontWeight: '600' }}>
-            <strong>After:</strong> Rehabbed, restyled, and thriving in a beautiful new planter. Ready for another 30 years.
           </p>
         </div>
 
@@ -508,104 +646,97 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 9. FAILURE / EDUCATION SECTION */}
-      <section className="section section-alt">
-        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-            <h2 style={{ fontSize: '2.75rem', marginBottom: '1rem' }}>
-              Your plants are more patient than you deserve.
-            </h2>
-            <p style={{ fontSize: '1.4rem', color: '#64748b', fontWeight: '600' }}>
-              But they won't wait forever.
-            </p>
-          </div>
-
-          {/* Callout Badge */}
-          <div style={{
-            background: 'linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)',
-            padding: '2.5rem',
-            borderRadius: '16px',
-            marginBottom: '3rem',
-            border: '3px solid #f59e0b',
-            display: 'flex',
-            alignItems: 'flex-start',
-            gap: '1.5rem',
-            boxShadow: '0 8px 20px rgba(245, 158, 11, 0.2)'
-          }}>
-            <AlertTriangle size={48} color="#f59e0b" style={{ flexShrink: 0 }} />
-            <div>
-              <p style={{ fontSize: '1.3rem', fontWeight: '800', color: '#92400e', marginBottom: '1rem' }}>
-                🪴 Did you know?
-              </p>
-              <p style={{ fontSize: '1.15rem', color: '#78350f', lineHeight: '1.7' }}>
-                A root-bound plant left too long can develop root rot — and root rot spreads. One neglected plant can silently take out your whole collection.
-              </p>
-            </div>
-          </div>
-
-          <div style={{
-            background: 'white',
-            padding: '3rem',
-            borderRadius: '16px',
-            boxShadow: '0 4px 16px rgba(0,0,0,0.08)'
-          }}>
-            <p style={{ fontSize: '1.2rem', color: '#323527', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-              The longer you wait, the harder it gets. What starts as an overdue repot becomes root rot. Root rot becomes pests. Pests don't stay on one plant.
-            </p>
-            <p style={{ fontSize: '1.2rem', color: '#3e8840', lineHeight: '1.8', fontWeight: '600' }}>
-              And that sentimental plant you've had for 20 years? It's tougher than you think — but it's not invincible.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* 10. LIGHT HUMOR SECTION */}
+      {/* 11. FRIENDLY CALLOUT BOX (Replaces Failure Section) */}
       <section className="section">
         <div style={{
           maxWidth: '900px',
           margin: '0 auto',
-          background: 'linear-gradient(135deg, rgba(62, 136, 64, 0.08) 0%, rgba(0, 145, 194, 0.08) 100%)',
+          background: 'linear-gradient(135deg, rgba(195, 218, 81, 0.15) 0%, rgba(62, 136, 64, 0.1) 100%)',
+          borderRadius: '20px',
+          padding: '3rem',
+          border: '3px solid #c3da51',
+          textAlign: 'center'
+        }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '1rem',
+            marginBottom: '1.5rem'
+          }}>
+            <Leaf size={36} color="#3e8840" />
+            <h2 style={{ fontSize: '2rem', margin: 0, color: '#323527' }}>
+              Your Plants Deserve Some TLC
+            </h2>
+          </div>
+          
+          <p style={{
+            fontSize: '1.2rem',
+            color: '#323527',
+            lineHeight: '1.8',
+            marginBottom: '1.5rem'
+          }}>
+            Whether they're overdue for a repot, looking a little sad, or you just want them to thrive — we're here to help. No guilt, no lectures, just expert care that makes a difference.
+          </p>
+
+          <p style={{
+            fontSize: '1.1rem',
+            color: '#3e8840',
+            fontWeight: '600',
+            fontStyle: 'italic'
+          }}>
+            Every plant has potential. Let us help yours shine!
+          </p>
+        </div>
+      </section>
+
+      {/* 12. LIGHT HUMOR SECTION */}
+      <section className="section section-alt">
+        <div style={{
+          maxWidth: '900px',
+          margin: '0 auto',
+          background: 'white',
           padding: '3rem',
           borderRadius: '20px',
-          border: '2px solid #c3da51'
+          border: '2px solid #f0ede8',
+          boxShadow: '0 4px 16px rgba(0,0,0,0.06)'
         }}>
           <h2 style={{ fontSize: '2.25rem', textAlign: 'center', marginBottom: '2rem' }}>
-            Signs your plant has been waiting too long:
+            Signs it might be time for a Plant Spa Day:
           </h2>
           
           <div style={{
             display: 'grid',
-            gap: '1.5rem'
+            gap: '1.25rem'
           }}>
             {[
-              { emoji: '🚨', text: 'Roots escaping from the bottom of the pot' },
-              { emoji: '😬', text: 'Soil that repels water instead of absorbing it' },
-              { emoji: '🐛', text: 'Tiny uninvited guests you would rather not think about' },
-              { emoji: '😶', text: 'You have been meaning to deal with it since last spring' }
+              { icon: <CheckCircle size={24} color="#3e8840" />, text: 'Roots peeking out from the bottom of the pot' },
+              { icon: <CheckCircle size={24} color="#3e8840" />, text: 'Soil that just won\'t absorb water anymore' },
+              { icon: <CheckCircle size={24} color="#3e8840" />, text: 'Plants that have been on your "to-do" list for months' },
+              { icon: <CheckCircle size={24} color="#3e8840" />, text: 'You want your space to look and feel amazing' }
             ].map((item, idx) => (
               <div key={idx} style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: '1.5rem',
-                padding: '1.5rem',
-                background: 'white',
-                borderRadius: '12px',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.05)'
+                gap: '1.25rem',
+                padding: '1.25rem',
+                background: '#fafafa',
+                borderRadius: '12px'
               }}>
-                <span style={{ fontSize: '2.5rem' }}>{item.emoji}</span>
-                <p style={{ fontSize: '1.15rem', color: '#323527', margin: 0 }}>{item.text}</p>
+                {item.icon}
+                <p style={{ fontSize: '1.1rem', color: '#323527', margin: 0 }}>{item.text}</p>
               </div>
             ))}
           </div>
 
           <p style={{
-            fontSize: '1.25rem',
+            fontSize: '1.2rem',
             textAlign: 'center',
-            marginTop: '2.5rem',
-            color: '#64748b',
-            fontStyle: 'italic'
+            marginTop: '2rem',
+            color: '#3e8840',
+            fontWeight: '600'
           }}>
-            No judgment. Just don't wait too long.
+            Sound familiar? Let's fix that together!
           </p>
         </div>
       </section>

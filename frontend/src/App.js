@@ -10,6 +10,8 @@ import Services from "./pages/Services";
 import Events from "./pages/Events";
 import Shop from "./pages/Shop";
 import Contact from "./pages/Contact";
+import GrowClub from "./pages/GrowClub";
+import SocialImpact from "./pages/SocialImpact";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/grow-club" element={<GrowClub />} />
+          <Route path="/social-impact" element={<SocialImpact />} />
         </Routes>
         <Footer />
         <Toaster position="top-right" />

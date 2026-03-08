@@ -9,32 +9,28 @@ const Services = () => {
       title: 'Quick Refresh (¼ Day)',
       price: '$325',
       duration: 'Up to 2 hours',
-      team: 'Two Plant Stylists',
-      description: 'Best for a few key plants needing care, touch-ups, or a small new setup.'
+      team: 'Two Plant Stylists'
     },
     {
       id: 2,
       title: 'Signature Spa (½ Day)',
       price: '$545',
       duration: 'Up to 4 hours',
-      team: 'Two Plant Stylists',
-      description: 'Best for one room or zone with mixed needs: some rehab, some refresh, some styling.'
+      team: 'Two Plant Stylists'
     },
     {
       id: 3,
       title: 'Full Plant Spa Day',
       price: '$1,150',
       duration: 'Up to 8 hours',
-      team: 'Two Plant Stylists',
-      description: 'Complete transformation for multiple rooms or extensive plant collections.'
+      team: 'Two Plant Stylists'
     },
     {
       id: 4,
       title: 'Signature Plant Stewardship',
       price: '$1,750',
       duration: 'Ongoing Program',
-      team: 'Dedicated Team',
-      description: 'Concierge-level ongoing care, extended support, and follow-up for serious plant collections.'
+      team: 'Dedicated Team'
     }
   ];
 
@@ -154,49 +150,42 @@ const Services = () => {
         }}>
           {services.map((service) => (
             <div key={service.id} className="card" style={{ 
-              padding: '3rem',
+              padding: '2.5rem',
               borderLeft: '4px solid #0091c2'
             }}>
               <div style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-                gap: '3rem',
-                alignItems: 'start'
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                flexWrap: 'wrap',
+                gap: '2rem'
               }}>
                 <div>
-                  <h2 style={{ marginBottom: '1rem', fontSize: '2rem', color: '#231f20' }}>{service.title}</h2>
+                  <h2 style={{ marginBottom: '0.75rem', fontSize: '1.75rem', color: '#231f20' }}>{service.title}</h2>
                   <p style={{ 
                     color: '#0091c2', 
                     fontWeight: '700', 
-                    fontSize: '2.5rem', 
-                    marginBottom: '1.5rem' 
+                    fontSize: '2rem', 
+                    marginBottom: '1rem' 
                   }}>
                     {service.price}
                   </p>
-                  <div style={{ marginBottom: '1.5rem' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
-                      <Clock size={20} color="#3e8840" />
-                      <span style={{ fontSize: '1.05rem', color: '#323527' }}>{service.duration}</span>
+                  <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <Clock size={18} color="#3e8840" />
+                      <span style={{ fontSize: '1rem', color: '#323527' }}>{service.duration}</span>
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                      <Users size={20} color="#3e8840" />
-                      <span style={{ fontSize: '1.05rem', color: '#323527' }}>{service.team}</span>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <Users size={18} color="#3e8840" />
+                      <span style={{ fontSize: '1rem', color: '#323527' }}>{service.team}</span>
                     </div>
                   </div>
-                  <p style={{ 
-                    color: '#323527', 
-                    fontSize: '1.1rem', 
-                    marginBottom: '2rem',
-                    lineHeight: '1.7'
-                  }}>
-                    {service.description}
-                  </p>
                 </div>
                 <div>
                   <Link to="/contact">
-                    <button className="btn-accent" style={{ width: '100%', fontSize: '17px' }}>
+                    <button className="btn-accent" style={{ fontSize: '16px', padding: '14px 28px' }}>
                       Book This Service
-                      <ArrowRight size={20} />
+                      <ArrowRight size={18} />
                     </button>
                   </Link>
                 </div>
