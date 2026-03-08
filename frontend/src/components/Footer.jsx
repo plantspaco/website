@@ -22,16 +22,16 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <img 
-              src="https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/buzwcxdn_PlantSpaCo_Logo_Primary_Transparent.png" 
+              src="https://customer-assets.emergentagent.com/job_16f5c677-73fd-4396-b13e-a22decbdcada/artifacts/q5ghpdo7_Logo_PSC_1.png" 
               alt="Plant Spa Co." 
-              style={{ height: '60px', width: 'auto', marginBottom: '1rem', filter: 'brightness(0) invert(1)' }}
+              style={{ height: '180px', width: 'auto', marginBottom: '1.5rem' }}
             />
             <p style={{ color: '#cbd5e1', fontSize: '14px', lineHeight: '1.6' }}>
               Nurturing plants, elevating spaces. Professional plant care, interior design, and botanical experiences.
             </p>
             <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem' }}>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style={{
-                color: '#ff5757',
+                color: '#00A2E8',
                 transition: 'transform 0.2s ease'
               }}
               onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
@@ -40,7 +40,7 @@ const Footer = () => {
                 <Facebook size={24} />
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{
-                color: '#ff5757',
+                color: '#00A2E8',
                 transition: 'transform 0.2s ease'
               }}
               onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
@@ -55,7 +55,7 @@ const Footer = () => {
           <div>
             <h4 style={{ color: 'white', marginBottom: '1rem', fontSize: '18px', fontWeight: '600' }}>Quick Links</h4>
             <ul style={{ listStyle: 'none', padding: 0 }}>
-              {['Home', 'Services', 'Events', 'Shop', 'Contact'].map((item) => (
+              {['Home', 'About', 'Services', 'Events', 'Shop', 'Contact'].map((item) => (
                 <li key={item} style={{ marginBottom: '0.5rem' }}>
                   <Link to={`/${item.toLowerCase() === 'home' ? '' : item.toLowerCase()}`} style={{
                     color: '#cbd5e1',
@@ -63,7 +63,7 @@ const Footer = () => {
                     fontSize: '14px',
                     transition: 'color 0.2s ease'
                   }}
-                  onMouseEnter={(e) => e.target.style.color = '#ff5757'}
+                  onMouseEnter={(e) => e.target.style.color = '#00A2E8'}
                   onMouseLeave={(e) => e.target.style.color = '#cbd5e1'}
                   >
                     {item}
@@ -78,19 +78,19 @@ const Footer = () => {
             <h4 style={{ color: 'white', marginBottom: '1rem', fontSize: '18px', fontWeight: '600' }}>Contact Us</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <Phone size={16} color="#ff5757" />
+                <Phone size={16} color="#00A2E8" />
                 <a href="tel:+1234567890" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>
                   (123) 456-7890
                 </a>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <Mail size={16} color="#ff5757" />
+                <Mail size={16} color="#00A2E8" />
                 <a href="mailto:hello@plantspaco.com" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>
                   hello@plantspaco.com
                 </a>
               </div>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
-                <MapPin size={16} color="#ff5757" style={{ marginTop: '2px' }} />
+                <MapPin size={16} color="#00A2E8" style={{ marginTop: '2px' }} />
                 <span style={{ color: '#cbd5e1', fontSize: '14px' }}>
                   123 Green Street<br />Plant City, PC 12345
                 </span>

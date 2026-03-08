@@ -15,7 +15,7 @@ const Shop = () => {
     <div>
       {/* Hero Section */}
       <section style={{
-        background: 'linear-gradient(135deg, rgba(255, 87, 87, 0.1) 0%, rgba(255, 255, 255, 1) 100%)',
+        background: 'linear-gradient(135deg, rgba(0, 162, 232, 0.1) 0%, rgba(255, 255, 255, 1) 100%)',
         padding: '5rem 2rem',
         textAlign: 'center'
       }}>
@@ -42,8 +42,8 @@ const Shop = () => {
               style={{
                 padding: '10px 24px',
                 borderRadius: '8px',
-                border: selectedCategory === category ? '2px solid #ff5757' : '2px solid #e2e8f0',
-                backgroundColor: selectedCategory === category ? '#ff5757' : 'white',
+                border: selectedCategory === category ? '2px solid #00A2E8' : '2px solid #e2e8f0',
+                backgroundColor: selectedCategory === category ? '#00A2E8' : 'white',
                 color: selectedCategory === category ? 'white' : '#64748b',
                 fontWeight: '600',
                 cursor: 'pointer',
@@ -52,8 +52,8 @@ const Shop = () => {
               }}
               onMouseEnter={(e) => {
                 if (selectedCategory !== category) {
-                  e.target.style.borderColor = '#ff5757';
-                  e.target.style.color = '#ff5757';
+                  e.target.style.borderColor = '#00A2E8';
+                  e.target.style.color = '#00A2E8';
                 }
               }}
               onMouseLeave={(e) => {
@@ -92,7 +92,7 @@ const Shop = () => {
                   position: 'absolute',
                   top: '1rem',
                   right: '1rem',
-                  backgroundColor: '#ff5757',
+                  backgroundColor: '#00A2E8',
                   color: 'white',
                   padding: '6px 12px',
                   borderRadius: '6px',
@@ -106,7 +106,7 @@ const Shop = () => {
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '0.5rem' }}>
                   <h3 style={{ fontSize: '1.25rem', margin: 0 }}>{product.name}</h3>
                   <span style={{ 
-                    color: '#ff5757', 
+                    color: '#00A2E8', 
                     fontWeight: '700', 
                     fontSize: '1.25rem',
                     whiteSpace: 'nowrap',

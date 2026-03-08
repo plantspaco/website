@@ -176,7 +176,7 @@ const PlantDiagnostic = ({ isOpen, onClose }) => {
         <DialogHeader>
           <DialogTitle>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <Leaf size={24} color="#ff5757" />
+              <Leaf size={24} color="#00A2E8" />
               Plant Diagnostic Tool - Step {step} of 4
             </div>
           </DialogTitle>
@@ -199,8 +199,8 @@ const PlantDiagnostic = ({ isOpen, onClose }) => {
                       padding: '1rem',
                       border: '2px solid #e2e8f0',
                       borderRadius: '8px',
-                      backgroundColor: answers.problem === problem.value ? '#fff5f5' : 'white',
-                      borderColor: answers.problem === problem.value ? '#ff5757' : '#e2e8f0',
+                      backgroundColor: answers.problem === problem.value ? '#e6f7ff' : 'white',
+                      borderColor: answers.problem === problem.value ? '#00A2E8' : '#e2e8f0',
                       textAlign: 'left',
                       cursor: 'pointer',
                       transition: 'all 0.2s ease',
@@ -208,8 +208,8 @@ const PlantDiagnostic = ({ isOpen, onClose }) => {
                       fontWeight: '500'
                     }}
                     onMouseEnter={(e) => {
-                      e.target.style.borderColor = '#ff5757';
-                      e.target.style.backgroundColor = '#fff5f5';
+                      e.target.style.borderColor = '#00A2E8';
+                      e.target.style.backgroundColor = '#e6f7ff';
                     }}
                     onMouseLeave={(e) => {
                       if (answers.problem !== problem.value) {
@@ -274,16 +274,16 @@ const PlantDiagnostic = ({ isOpen, onClose }) => {
                       padding: '1rem',
                       border: '2px solid #e2e8f0',
                       borderRadius: '8px',
-                      backgroundColor: answers.soilMoisture === option.value ? '#fff5f5' : 'white',
-                      borderColor: answers.soilMoisture === option.value ? '#ff5757' : '#e2e8f0',
+                      backgroundColor: answers.soilMoisture === option.value ? '#e6f7ff' : 'white',
+                      borderColor: answers.soilMoisture === option.value ? '#00A2E8' : '#e2e8f0',
                       textAlign: 'left',
                       cursor: 'pointer',
                       transition: 'all 0.2s ease',
                       fontSize: '15px'
                     }}
                     onMouseEnter={(e) => {
-                      e.target.style.borderColor = '#ff5757';
-                      e.target.style.backgroundColor = '#fff5f5';
+                      e.target.style.borderColor = '#00A2E8';
+                      e.target.style.backgroundColor = '#e6f7ff';
                     }}
                     onMouseLeave={(e) => {
                       if (answers.soilMoisture !== option.value) {
@@ -330,16 +330,16 @@ const PlantDiagnostic = ({ isOpen, onClose }) => {
                       padding: '1rem',
                       border: '2px solid #e2e8f0',
                       borderRadius: '8px',
-                      backgroundColor: answers.location === option.value ? '#fff5f5' : 'white',
-                      borderColor: answers.location === option.value ? '#ff5757' : '#e2e8f0',
+                      backgroundColor: answers.location === option.value ? '#e6f7ff' : 'white',
+                      borderColor: answers.location === option.value ? '#00A2E8' : '#e2e8f0',
                       textAlign: 'left',
                       cursor: 'pointer',
                       transition: 'all 0.2s ease',
                       fontSize: '15px'
                     }}
                     onMouseEnter={(e) => {
-                      e.target.style.borderColor = '#ff5757';
-                      e.target.style.backgroundColor = '#fff5f5';
+                      e.target.style.borderColor = '#00A2E8';
+                      e.target.style.backgroundColor = '#e6f7ff';
                     }}
                     onMouseLeave={(e) => {
                       if (answers.location !== option.value) {
@@ -374,13 +374,13 @@ const PlantDiagnostic = ({ isOpen, onClose }) => {
           {step === 5 && diagnosis && (
             <div>
               <div style={{
-                backgroundColor: '#fff5f5',
+                backgroundColor: '#e6f7ff',
                 padding: '1.5rem',
                 borderRadius: '12px',
                 marginBottom: '2rem',
-                border: '2px solid #ff5757'
+                border: '2px solid #00A2E8'
               }}>
-                <h3 style={{ color: '#ff5757', marginBottom: '1rem' }}>
+                <h3 style={{ color: '#00A2E8', marginBottom: '1rem' }}>
                   {diagnosis.diagnosis}
                 </h3>
                 <div>
