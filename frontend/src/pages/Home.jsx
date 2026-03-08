@@ -28,14 +28,15 @@ const Home = () => {
           maxWidth: '1280px',
           margin: '0 auto',
           padding: '3rem 2rem',
-          color: 'white'
+          color: '#c3da51'
         }}>
           <h1 style={{
             fontSize: '4rem',
             fontWeight: '800',
             marginBottom: '1.5rem',
             lineHeight: '1.1',
-            maxWidth: '800px'
+            maxWidth: '800px',
+            textShadow: '2px 2px 4px rgba(0,0,0,0.6)'
           }}>
             Professional Houseplant Service for Homes & Small Businesses
           </h1>
@@ -45,7 +46,8 @@ const Home = () => {
             maxWidth: '700px',
             lineHeight: '1.6',
             fontWeight: '400',
-            opacity: 0.95
+            opacity: 0.95,
+            textShadow: '1px 1px 3px rgba(0,0,0,0.6)'
           }}>
             Healthy, thriving plants making your space beautiful and inviting.
           </p>
