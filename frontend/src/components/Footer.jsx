@@ -79,8 +79,8 @@ const Footer = () => {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <Phone size={16} color="#00A2E8" />
-                <a href="tel:+1234567890" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>
-                  (123) 456-7890
+                <a href="tel:+9196072066" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '14px' }}>
+                  (919) 607-2066
                 </a>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
@@ -92,7 +92,7 @@ const Footer = () => {
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
                 <MapPin size={16} color="#00A2E8" style={{ marginTop: '2px' }} />
                 <span style={{ color: '#cbd5e1', fontSize: '14px' }}>
-                  123 Green Street<br />Plant City, PC 12345
+                   Morrisville, NC 27560
                 </span>
               </div>
             </div>
